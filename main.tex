@@ -1,0 +1,114 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[parfill]{parskip}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=1.5cm,bottom=1.5cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\newcommand{\matr}[1]{\mathbf{#1}}
+\usepackage{subcaption}
+\usepackage{subfiles}
+
+\title{Partitioning Thresholds in Single Porosity Hybrid Modelling}
+\author{Daniel Wong}
+
+\begin{document}
+\maketitle
+
+\textbf{Key Points}
+\begin{itemize}
+    \item Single porosity representation of small scale fractures results in large errors above a partitioning threshold
+    \item The partitioning threshold can be determined \textit{a priori} from Fracture Subset Upscaling curves
+    \item Effective Medium Theory is shown to reproduce Fracture Subset Upscaling curves with high accuracy
+\end{itemize}
+
+\begin{abstract}
+Flow modeling in multi-scale fractured porous media is often performed using hybrid methods; one such method is the Single Porosity hybrid method, in which fractures are partitioned such that small fractures are upscaled with the matrix into a single continuum, and large fractures are explicitly represented. In this paper, we explore how far this concept can be taken by studying the effects of partitioning size on hybrid model performance. We observe that up to a threshold partitioning size, hybrid models closely match full models in terms of simulation output. However, beyond the threshold, hybrid model results show marked deviations away from reference solutions. The threshold partitioning size can be identified from Fracture Subset Upscaling curves and corresponds to the point where effective permeability of small fractures begin to increase rapidly. The curves can be obtained numerically via flow based upscaling, or analytically using the Effective Medium Theory. The former method is robust but slow, while the latter is restricted to elliptical fractures but is significantly faster.
+\end{abstract}
+
+\section{Introduction}
+Fractured porous media often encountered in oil and gas, geothermal, nuclear waste disposal, etc.
+
+Multi-scale nature makes modelling difficult. Different modelling techniques are available. Hybrid approach is recommended (Berkowitz). Most basic is Single Porosity (SP) hybrid models 
+
+Highlight how improper upscaling results in errors. Raises need for a systematic way to do so.
+
+\section{Methods}
+\subsection{Data}
+Discrete Fracture Networks (DFN) are generated synthetically as well as using fracture trace maps sourced from outcrops in Brazil. See Figures \ref{fig:DD} for samples.
+
+For DFN generation, the parameters used are $P_{32}$ the fracture density, $n_s$ the power law exponent of fracture sizes, $s_{min}$ and $s_{max}$ respectively the minimum and maximum fracture sizes, $L_{dom}$ the size of the model domain, and $n_a$ the power law exponent of aperture-size relationship. See Table \ref{table:DFNparams} for four cases.
+
+\begin{table}[h]
+	\centering
+	\caption{Parameters for DFN generation.}
+	
+	\begin{tabular}{c r r r r l}
+		Case & $P_{32}$ & $n_s$ & $s_{min}$ & $s_{max}$ & Remark \\
+		\hline
+		A & 0.150 & 1.50 & 5.0 & 20 & Base case\\
+		B & 0.300 & 1.50 & 5.0 & 20 & 2x $P_{32}$\\
+		C & 0.150 & 3.00 & 5.0 & 20 & 2x $n_s$\\
+		D & 0.150 & 1.50 & 5.0 & 40 & 2x $s_{max}$\\
+		
+	\end{tabular}
+	\label{table:DFNparams}
+\end{table}
+
+
+
+\subsection{Simulation Setup}
+Discuss how hybrid models are created from DFN. This involves FSU which we perform numerically. For the DFNs generated using Table \ref{table:DFNparams}, the conditions allow for the use of EMT. Hence, FSU was also performed with EMT for comparison.
+
+Given fractures with size between $[s_{min},s_{max}]$, if we pick a partitioning size, $s_p$ and upscale fractures between $[s_{min},s_p]$, we obtain an effective permeability $K_{eff}(s_p)$. $K_{eff}/K_m$ vs $s_p$ typically exhibits a threshold $s_p^*$ beyond which $K_{eff}$ grows rapidly, implying well-connectedness. See figure.
+
+FSU can be performed via numerical flow based upscaling, which is more versatile but slow. In our case, we used EDFM. Alternatively, EMT can also be used to perform analytical FSU. This is faster but limited to specific cases. Refer to figure showing comparison of results.
+
+Describe test conditions the DFNs were subject to.
+
+\section{Results}
+\subsection{Effective Permeability and Partitioning Size}
+\subfile{FSU/FSU_main.tex}
+
+\subsection{Single Phase Flow in Hybrid Models}
+\subfile{DD_main/DD_figs.tex}
+
+
+\subsection{Accuracy of Effective Medium Theory}
+See Figure \ref{fig:FSU}.
+
+Describe how FSU using EMT matches very well for 3D cases.
+
+Discuss time savings using EMT.
+
+\section{Discussion}
+\subsection{Effect of Partitioning Size on Response Accuracy}
+Discuss how hybrid models corresponding to low partitioning size match full model results very well, but in all cases, above a certain threshold, $s_p^*$, output starts to deviate.
+
+\subsection{\textit{A priori} Identification of Partitioning Threshold}
+Discuss identification of $s_p^*$ by plotting $K_{eff}/K_m$ against $s_p$ and where $s_p^*$ is located on the FSU curves.
+
+\section{Conclusion}
+We performed numerical studies on full and hybrid models of fracture systems (created with varying partitioning sizes) by subjecting them to similar production conditions. Analysis of the results obtained showed that:
+
+\begin{itemize}
+    \item There exists a threshold partitioning size, $s_p^*$ beyond which SP hybrid modelling is observed to produce significant errors compared to the full model reference solution. This is evident in both generated 3D DFNs and realistic fracture networks traced from outcrops.
+    
+    \item FSU curves exhibit a percolation behaviour and takes on an S-shape. For our studies, $s_p^*$ is consistently located right before fracture subset effective permeability starts to increase rapidly. This is consistent with the requirement that no separation of scale should occur in order to use a SP model.
+    
+    \item Numerical FSU is a slow process which takes hours to complete. For elliptical fractures, FSU can be performed analytically using EMT, which reduces processing time to seconds. FSU results by EMT were shown to match numerical FSU results very well. $s_p^*$ can also be identified from the EMT FSU curves. 
+    
+\end{itemize}
+
+
+
+\end{document}

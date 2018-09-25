@@ -1,0 +1,77 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[parfill]{parskip}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=1.5cm,bottom=1.5cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{subcaption}
+\usepackage{subfiles}
+
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+
+\title{Partitioning Thresholds in Single Porosity Hybrid Modelling}
+\author{Daniel Wong}
+
+\begin{document}
+	\begin{center}
+		\textit{Geophysical Research Letters}
+		
+		Supporting Information for
+	\end{center}
+	{\let\newpage\relax\maketitle}
+	
+	\section{Contents of this file}
+	\begin{itemize}
+		\item Details on Simulation Setup
+		\item Fracture Subset Upscaling Results for all cases
+		\item Drawdown Response for all cases
+	\end{itemize}
+	
+	\section{Details on Simulation Setup}
+	\begin{table}[h]
+		\centering
+		\caption{Parameters for DFN generation. Cases 1, 3, 5 and 9 correspond to A, B, C and D in the paper.}
+		
+		\begin{tabular}{l r r r r r r l}
+			Case & $P_{32}$ & $n_s$ & $s_{min}$ & $s_{max}$ & $L_{dom}$ & $n_a$ & Remark \\
+			\hline
+			1 (A) & 0.150 & 1.50 & 5.0 & 20 & 100 & 1 & Base case\\
+			2 & 0.075 & 1.50 & 5.0 & 20 & 100 & 1 & 0.5x $P_{32}$\\
+			3 (B) & 0.300 & 1.50 & 5.0 & 20 & 100 & 1 & 2x $P_{32}$\\
+			4 & 0.150 & 0.75 & 5.0 & 20 & 100 & 1 & 0.5x $n_s$\\
+			5 (C) & 0.150 & 3.00 & 5.0 & 20 & 100 & 1 & 2x $n_s$\\
+			6 & 0.150 & 1.50 & 2.5 & 20 & 100 & 1 & 0.5x $s_{min}$\\
+			7 & 0.150 & 1.50 & 10.0 & 20 & 100 & 1 & 2x $s_{min}$\\
+			8 & 0.150 & 1.50 & 5.0 & 10 & 100 & 1 & 0.5x $s_{max}$\\
+			9 (D) & 0.150 & 1.50 & 5.0 & 40 & 100 & 1 & 2x $s_{max}$\\
+			10 & 0.150 & 1.50 & 5.0 & 20 & 50 & 1 & 0.5x $l_{dom}$\\
+			11 & 0.150 & 1.50 & 5.0 & 20 & 150 & 1 & 1.5x $l_{dom}$\\
+			12 & 0.150 & 1.50 & 5.0 & 20 & 100 & 0.5 & $a \propto \sqrt{s}$\\
+			13 & 0.150 & 1.50 & 5.0 & 20 & 100 & 2 & $a \propto s^2$\\
+			
+		\end{tabular}
+		\label{table:DFNparams}
+	\end{table}
+	
+	\section{Fracture Subset Upscaling Results}
+	See Figure \ref{fig:FSU}.
+	\subfile{FSU/FSU_figures.tex}
+	
+	\section{Drawdown Response for all cases}
+	See Figures \ref{fig:3D_DD} and \ref{fig:Apodi_DD}.
+	\subfile{3D_DD/3D_DD_figures.tex}
+	\subfile{Apodi_DD/Apodi_DD_figures.tex}
+	
+
+\end{document}
