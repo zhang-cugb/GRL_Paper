@@ -1,0 +1,74 @@
+\begin{thebibliography}{10}
+
+\bibitem{Berkowitz2002}
+{\sc Berkowitz, B.}
+\newblock {Characterizing flow and transport in fractured geological media: A
+  review}.
+\newblock {\em Advances in Water Resources 25}, 8-12 (2002), 861--884.
+
+\bibitem{Bonnet2001}
+{\sc Bonnet, E., Bour, O., Odling, N.~E., Davy, P., Main, I., Cowie, P., and
+  Berkowitz, B.}
+\newblock {Scaling of Fracture Systems in Geological Media}.
+\newblock {\em Review of Geophysics}, 1999 (2001), 347--383.
+
+\bibitem{Durlofsky1991}
+{\sc Durlofsky, L.}
+\newblock {Numerical Calculation of equivalent grid block permeabilit tensors
+  for heterogeneous porous media}.
+\newblock {\em Water Resources Research 27}, 5 (1991), 699--708.
+
+\bibitem{Elfeel2013}
+{\sc Elfeel, M., Jamal, S., Enemanna, C., Arnold, D., and Geiger, S.}
+\newblock {Effect of DFN upscaling on history matching and prediction of
+  naturally fractured reservoirs}.
+\newblock {\em 75th European Association of Geoscientists and Engineers
+  Conference and Exhibition 2013 Incorporating SPE EUROPEC 2013: Changing
+  Frontiers}, June 2013 (2013), 10--13.
+
+\bibitem{Ezulike2013}
+{\sc Ezulike, D.~O., and Dehghanpour, H.}
+\newblock {Characterizing Tight Oil Reservoirs Using Dual- and Triple-Porosity
+  Models}.
+\newblock In {\em SPE Unconventional Resources Conference\/} (2013).
+
+\bibitem{March2018}
+{\sc March, R., Doster, F., and Geiger, S.}
+\newblock {Assessment of CO 2 storage potential in Naturally Fracture
+  Reservoirs with dual-porosity models}.
+\newblock {\em Water Resources Research\/} (2018), 54.
+
+\bibitem{Oda1985}
+{\sc Oda, M.}
+\newblock {Permeability tensor for discontinuous rock masses}.
+\newblock {\em G{\'{e}}otechnique 35}, 4 (1985), 483--495.
+
+\bibitem{Renard1997}
+{\sc Renard, P., and de~Marsily, G.}
+\newblock {Calculating equivalent permeability: a review}.
+\newblock {\em Advances in Water Resources 20}, 5-6 (1997), 253--278.
+
+\bibitem{Saevik2013}
+{\sc S{\ae}vik, P.~N., Berre, I., Jakobsen, M., and Lien, M.}
+\newblock {A 3D Computational Study of Effective Medium Methods Applied to
+  Fractured Media}.
+\newblock {\em Transport in Porous Media 100}, 1 (2013), 115--142.
+
+\bibitem{Saevik2014}
+{\sc S{\ae}vik, P.~N., Jakobsen, M., Lien, M., and Berre, I.}
+\newblock {Anisotropic effective conductivity in fractured rocks by explicit
+  effective medium methods}.
+\newblock {\em Geophysical Prospecting 62}, 6 (2014), 1297--1314.
+
+\bibitem{Warren1963}
+{\sc Warren, J.~E., and Root, P.~J.}
+\newblock {The behavior of naturally fractured reservoirs}.
+\newblock {\em Society of Petroleum Engineers Journal 3}, 03 (1963), 245--255.
+
+\bibitem{Yan2016}
+{\sc Yan, B., Alfi, M., An, C., Cao, Y., Wang, Y., and Killough, J.~E.}
+\newblock {General Multi-Porosity simulation for fractured reservoir modeling}.
+\newblock {\em Journal of Natural Gas Science and Engineering 33\/} (2016),
+  777--791.
+
+\end{thebibliography}
