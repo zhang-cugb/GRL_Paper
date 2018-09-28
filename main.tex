@@ -17,7 +17,8 @@
 \newcommand{\matr}[1]{\mathbf{#1}}
 \usepackage{subcaption}
 \usepackage{subfiles}
-
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
 
 
 \title{Partitioning Thresholds in Hybrid Implicit and Explicit Representations of Naturally Fractured Reservoirs}
@@ -38,40 +39,26 @@ Flow modeling in naturally fractured reservoirs is a challenging task due to the
 \end{abstract}
 
 \section{Introduction}
-Naturally fractured reservoirs (NFR) are commonplace in nature and of great interest in areas including but not limited to hydrocarbon extraction, geothermal resource exploitation, and containment of nuclear waste disposal \cite{Berkowitz2002}. More recently, there has also been 
-interest in NFRs as a potential site for carbon sequestration \cite{March2018}. In all these applications, the central process at play is fluid flow in fractured porous media, and accurately modelling this process is crucial for engineering success.
+Naturally fractured reservoirs (NFR) are commonplace in nature and of great interest in areas including but not limited to hydrocarbon extraction, geothermal resource exploitation, and containment of nuclear waste disposal \citep{Berkowitz2002}. More recently, there has also been 
+interest in NFRs as a potential site for carbon sequestration \citep{March2018}. In all these applications, the central process at play is fluid flow in fractured porous media, and accurately modelling this process is crucial for engineering success.
 
-However, the highly heterogeneous nature of NFRs makes flow modelling difficult. Instead of representing all fractures in a simulation model, a popular approach, known as the continuum method, is to represent the fracture network as equivalent porous media \cite{Ezulike2013, Warren1963, Yan2016}. The conversion from discrete fractures to a continuum representation involves an averaging process known as upscaling, which can be performed numerically or analytically \cite{Durlofsky1991,Oda1985,Renard1997,Saevik2013}. In this paper, we make extensive use of an analytical upscaling tool known as the Effective Medium Theory (EMT) which was recently adapted for fractured porous media, and was shown to outperform traditional techniques like Oda's method \cite{Oda1985, Saevik2013, Saevik2014}. 
+However, the highly heterogeneous nature of NFRs makes flow modelling difficult. Instead of representing all fractures in a simulation model, a popular approach, known as the continuum method, is to represent the fracture network as equivalent porous media \citep{Ezulike2013, Warren1963, Yan2016}. The conversion from discrete fractures to a continuum representation involves an averaging process known as upscaling, which can be performed numerically or analytically \citep{Durlofsky1991,Oda1985,Renard1997,Saevik2013}. In this paper, we make extensive use of an analytical upscaling tool known as the Effective Medium Theory (EMT) which was recently adapted for fractured porous media, and was shown to outperform traditional techniques like Oda's method \citep{Oda1985, Saevik2013, Saevik2014}. 
 
-For multiscale NFRs, unfortunately, upscaled equivalent permeability fields have been shown to be dependent on the choice of homogenization scale; this will eventually lead to varying flow modelling outcomes \cite{Elfeel2013}. In particular, NFRs tend to contain fractures with various sizes that oftentimes follow a power law distribution \cite{Bonnet2001}. This implies that no Representative Elementary Volume (REV) can be defined, which invalidates the upscaling step necessary in continuum modelling \cite{Berkowitz2002}.
+For multiscale NFRs, unfortunately, upscaled equivalent permeability fields have been shown to be dependent on the choice of homogenization scale; this will eventually lead to varying flow modelling outcomes \citep{Elfeel2013}. In particular, NFRs tend to contain fractures with various sizes that oftentimes follow a power law distribution \citep{Bonnet2001}. This implies that no Representative Elementary Volume (REV) can be defined, which invalidates the upscaling step necessary in continuum modelling \citep{Berkowitz2002}.
 
-Nevertheless, as fully resolving all fractures in a simulation model is prohibitively expensive, model simplification is still highly desirable. One way forward is to use a divide-and-conquer approach known as hybrid modelling \cite{Berkowitz2002}. In this method, the fracture network has to be partitioned into two sets: one set with fracture sizes less than the partitioning size, and another with larger fractures. Using either numerical or analytical upscaling, small fractures and the rock matrix are replaced with equivalent porous media. Meanwhile, the large fractures are explicitly represented. Constructing a hybrid model using a small partitioning size preserves as much details as possible, at the expense of computational efficiency. On the other hand, large partitioning sizes yield significant model reductions, but at the cost of model accuracy.
+Nevertheless, as fully resolving all fractures in a simulation model is prohibitively expensive, model simplification is still highly desirable. One way forward is to use a divide-and-conquer approach known as hybrid modelling \citep{Berkowitz2002}. In this method, the fracture network has to be partitioned into two sets: one set with fracture sizes less than the partitioning size, and another with larger fractures. Using either numerical or analytical upscaling, small fractures and the rock matrix are replaced with equivalent porous media. Meanwhile, the large fractures are explicitly represented. Constructing a hybrid model using a small partitioning size preserves as much details as possible, at the expense of computational efficiency. On the other hand, large partitioning sizes yield significant model reductions, but at the cost of model accuracy.
 
 In this paper, we compare performances of hybrid models created using various partitioning sizes against full model solutions. The hybrid models are constructed by upscaling the matrix and small fractures into a single continuum, and as such are called Single Porosity (SP) hybrid models. The results ascertain that hybrid models can indeed be used to simplify complex fractured reservoir simulations, but is restricted to partitioning sizes below observed thresholds. From the relationship between effective permeability and partitioning size, we also observe that the thresholds correspond with partitioning sizes where the effective permeability of small fractures begin to increase rapidly. This relationship can be produced using numerical flow based upscaling, but for penny shaped fractures, the more efficient EMT can also be used.
 
-
-
 \section{Methods}
+The simulations in this paper are performed using the Embedded Discrete Fracture Model (EDFM), which is available through the MATLAB Reservoir Simulation Toolbox (MRST) \citep{Lee2001, Lie2015, Moinfar2013}. EDFM uses non-neighbouring connections to facilitate fracture-matrix and fracture-fracture flow. This decouples the matrix grid from the fracture network geometry and eases grid construction. EDFM also allows painless modifications to create hybrid models by removing fractures and updating matrix permeabilities.
+
 \subsection{Data}
-Discrete Fracture Networks (DFN) are generated synthetically as well as using fracture trace maps sourced from outcrops in Brazil. See Figures \ref{fig:DD} for samples.
+The Discrete Fracture Networks (DFN) used in this study are either (1) generated in 3D using the procedures laid out in \citet{Priest1993}, or (2) created from 2D trace maps of fractures observed in the outcrop of the Jandaira Carbonate Formation in Brazil (Figure \ref{fig:DD}) \citep{Bisdom2017}.
 
-For DFN generation, the parameters used are $P_{32}$ the fracture density, $n_s$ the power law exponent of fracture sizes, $s_{min}$ and $s_{max}$ respectively the minimum and maximum fracture sizes, $L_{dom}$ the size of the model domain, and $n_a$ the power law exponent of aperture-size relationship. See Table \ref{table:DFNparams} for four cases.
+For each 3D DFN, three orthogonal sets of fractures are generated stochastically; the base parameters used are the fracture density ($P_{32}=0.15m^2/m^3$ per fracture set), the power law exponent of fracture sizes ($n_s=1.5$), and the fracture size range ($s_{min}=5m$ and $s_{max}=20m$ in radii). Fractures are circular in shape with an aperture-size ratio of $1.75\times 10^{-5}$. Four different cases are considered: (A) Base parameters, (B) $2\times P_{32}$, (C) $2\times n_s$ and (D) $2\times s_{min}$. In each case, 10 DFN realizations are generated in order to capture variations resulting from the power law size distribution. Examples of these DFNs are shown in Figure \ref{fig:DD_A}, \ref{fig:DD_B}, \ref{fig:DD_C} and \ref{fig:DD_D}.
 
-\begin{table}[h]
-	\centering
-	\caption{Parameters for DFN generation.}
-	
-	\begin{tabular}{c r r r r l}
-		Case & $P_{32}$ & $n_s$ & $s_{min}$ & $s_{max}$ & Remark \\
-		\hline
-		A & 0.150 & 1.50 & 5.0 & 20 & Base case\\
-		B & 0.300 & 1.50 & 5.0 & 20 & 2x $P_{32}$\\
-		C & 0.150 & 3.00 & 5.0 & 20 & 2x $n_s$\\
-		D & 0.150 & 1.50 & 5.0 & 40 & 2x $s_{max}$\\
-		
-	\end{tabular}
-	\label{table:DFNparams}
-\end{table}
+
 
 
 
@@ -118,7 +105,7 @@ We performed numerical studies on full and hybrid models of fracture systems (cr
     
 \end{itemize}
 
-\bibliographystyle{acm}
+
 \bibliography{/Users/danie/Documents/phd-daniel/Bibtex/library}
 
 \end{document}

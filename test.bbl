@@ -1,12 +1,25 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[{Ahmed Elfeel} et~al.(2013){Ahmed Elfeel}, Jamal, Enemanna, Arnold,
+  and Geiger]{Elfeel2013}
+Mohamed {Ahmed Elfeel}, Sarim Jamal, Chukwuemeka Enemanna, Dan Arnold, and
+  Sebastian Geiger.
+\newblock {Effect of DFN Upscaling on History Matching and Prediction of
+  Naturally Fractured Reservoirs}.
+\newblock In \emph{EAGE Annual Conference {\&} Exhibition incorporating SPE
+  Europec}, number June 2013, pages 10--13. Society of Petroleum Engineers, jun
+  2013.
+\newblock ISBN 9781629937915.
+\newblock \doi{10.2118/164838-MS}.
+\newblock URL \url{http://www.onepetro.org/doi/10.2118/164838-MS}.
+
 \bibitem[Berkowitz(2002)]{Berkowitz2002}
-B.~Berkowitz.
+Brian Berkowitz.
 \newblock {Characterizing flow and transport in fractured geological media: A
   review}.
 \newblock \emph{Advances in Water Resources}, 25\penalty0 (8-12):\penalty0
@@ -16,18 +29,9 @@ B.~Berkowitz.
 \newblock URL
   \url{http://linkinghub.elsevier.com/retrieve/pii/S0309170802000428}.
 
-\bibitem[Bisdom et~al.(2017)Bisdom, Bertotti, Bezerra, {Van Eijk}, {Van Der
-  Voet}, and Reijmer]{Bisdom2017}
-K.~Bisdom, G.~Bertotti, H.~Bezerra, M.~{Van Eijk}, E.~{Van Der Voet}, and
-  J.~Reijmer.
-\newblock {Deterministic fracture network models from the Potiguar basin,
-  Brazil}, 2017.
-\newblock URL
-  \url{https://data.4tu.nl/repository/uuid:988152da-3ac3-44cb-9d87-c7365e3707b6}.
-
 \bibitem[Bonnet et~al.(2001)Bonnet, Bour, Odling, Davy, Main, Cowie, and
   Berkowitz]{Bonnet2001}
-E.~Bonnet, O.~Bour, N.~E. Odling, P.~Davy, I.~Main, P.~Cowie, and B.~Berkowitz.
+E~Bonnet, O~Bour, N~E Odling, P~Davy, I~Main, P~Cowie, and B~Berkowitz.
 \newblock {Scaling of fracture systems in geological media}.
 \newblock \emph{Reviews of Geophysics}, 39\penalty0 (3):\penalty0 347--383, aug
   2001.
@@ -36,7 +40,7 @@ E.~Bonnet, O.~Bour, N.~E. Odling, P.~Davy, I.~Main, P.~Cowie, and B.~Berkowitz.
 \newblock URL \url{http://doi.wiley.com/10.1029/1999RG000074}.
 
 \bibitem[Durlofsky(1991)]{Durlofsky1991}
-L.~J. Durlofsky.
+Louis~J. Durlofsky.
 \newblock {Numerical calculation of equivalent grid block permeability tensors
   for heterogeneous porous media}.
 \newblock \emph{Water Resources Research}, 27\penalty0 (5):\penalty0 699--708,
@@ -45,21 +49,8 @@ L.~J. Durlofsky.
 \newblock \doi{10.1029/91WR00107}.
 \newblock URL \url{http://doi.wiley.com/10.1029/91WR00107}.
 
-\bibitem[Elfeel et~al.(2013)Elfeel, Jamal, Enemanna, Arnold, and
-  Geiger]{Elfeel2013}
-M.~Elfeel, S.~Jamal, C.~Enemanna, D.~Arnold, and S.~Geiger.
-\newblock {Effect of DFN upscaling on history matching and prediction of
-  naturally fractured reservoirs}.
-\newblock In \emph{75th European Association of Geoscientists and Engineers
-  Conference and Exhibition 2013 Incorporating SPE EUROPEC 2013: Changing
-  Frontiers}, number June 2013, pages 10--13. Society of Petroleum Engineers,
-  jun 2013.
-\newblock ISBN 9781629937915.
-\newblock \doi{10.2118/164838-MS}.
-\newblock URL \url{http://www.onepetro.org/doi/10.2118/164838-MS}.
-
 \bibitem[Ezulike and Dehghanpour(2013)]{Ezulike2013}
-D.~O. Ezulike and H.~Dehghanpour.
+D~O Ezulike and H.~Dehghanpour.
 \newblock {Characterizing Tight Oil Reservoirs Using Dual- and Triple-Porosity
   Models}.
 \newblock In \emph{SPE Unconventional Resources Conference Canada}. Society of
@@ -83,7 +74,7 @@ K.~Lie.
 \newblock SINTEF, 2015.
 
 \bibitem[March et~al.(2018)March, Doster, and Geiger]{March2018}
-R.~March, F.~Doster, and S.~Geiger.
+Rafael March, Florian Doster, and Sebastian Geiger.
 \newblock {Assessment of CO 2 Storage Potential in Naturally Fractured
   Reservoirs With Dual-Porosity Models}.
 \newblock \emph{Water Resources Research}, 54\penalty0 (3):\penalty0
@@ -94,7 +85,7 @@ R.~March, F.~Doster, and S.~Geiger.
 
 \bibitem[Moinfar et~al.(2012)Moinfar, Varavei, Sepehrnoori, and
   Johns]{Moinfar2013}
-A.~Moinfar, A.~Varavei, K.~Sepehrnoori, and R.~T. Johns.
+Ali Moinfar, Abdoljalil Varavei, Kamy Sepehrnoori, and Russell~Taylor Johns.
 \newblock {Development of a Novel and Computationally-Efficient
   Discrete-Fracture Model to Study IOR Processes in Naturally Fractured
   Reservoirs}.
@@ -105,7 +96,7 @@ A.~Moinfar, A.~Varavei, K.~Sepehrnoori, and R.~T. Johns.
 \newblock URL \url{http://www.onepetro.org/doi/10.2118/154246-MS}.
 
 \bibitem[Oda(1985)]{Oda1985}
-M.~Oda.
+M~Oda.
 \newblock {Permeability tensor for discontinuous rock masses}.
 \newblock \emph{G{\'{e}}otechnique}, 35\penalty0 (4):\penalty0 483--495, dec
   1985.
@@ -116,7 +107,7 @@ M.~Oda.
   http://www.icevirtuallibrary.com/doi/10.1680/geot.1985.35.4.483}.
 
 \bibitem[Priest(1993)]{Priest1993}
-S.~D. Priest.
+Stephen~D. Priest.
 \newblock \emph{{Discontinuity Analysis for Rock Engineering}}.
 \newblock Springer Netherlands, Dordrecht, 1993.
 \newblock ISBN 978-94-010-4656-5.
@@ -124,7 +115,7 @@ S.~D. Priest.
 \newblock URL \url{http://link.springer.com/10.1007/978-94-011-1498-1}.
 
 \bibitem[Renard and de~Marsily(1997)]{Renard1997}
-P.~Renard and G.~de~Marsily.
+Ph. Renard and G.~de~Marsily.
 \newblock {Calculating equivalent permeability: a review}.
 \newblock \emph{Advances in Water Resources}, 20\penalty0 (5-6):\penalty0
   253--278, oct 1997.
@@ -135,7 +126,7 @@ P.~Renard and G.~de~Marsily.
 
 \bibitem[S{\ae}vik et~al.(2013)S{\ae}vik, Berre, Jakobsen, and
   Lien]{Saevik2013}
-P.~N. S{\ae}vik, I.~Berre, M.~Jakobsen, and M.~Lien.
+P{\aa}l~N{\ae}verlid S{\ae}vik, Inga Berre, Morten Jakobsen, and Martha Lien.
 \newblock {A 3D Computational Study of Effective Medium Methods Applied to
   Fractured Media}.
 \newblock \emph{Transport in Porous Media}, 100\penalty0 (1):\penalty0
@@ -145,7 +136,7 @@ P.~N. S{\ae}vik, I.~Berre, M.~Jakobsen, and M.~Lien.
 \newblock URL \url{http://link.springer.com/10.1007/s11242-013-0208-0}.
 
 \bibitem[Saevik et~al.(2014)Saevik, Jakobsen, Lien, and Berre]{Saevik2014}
-P.~N. Saevik, M.~Jakobsen, M.~Lien, and I.~Berre.
+P{\aa}l~Naeverlid Saevik, Morten Jakobsen, Martha Lien, and Inga Berre.
 \newblock {Anisotropic effective conductivity in fractured rocks by explicit
   effective medium methods}.
 \newblock \emph{Geophysical Prospecting}, 62\penalty0 (6):\penalty0 1297--1314,
@@ -155,7 +146,7 @@ P.~N. Saevik, M.~Jakobsen, M.~Lien, and I.~Berre.
 \newblock URL \url{http://doi.wiley.com/10.1111/1365-2478.12173}.
 
 \bibitem[Warren and Root(1963)]{Warren1963}
-J.~Warren and P.~Root.
+J.E. Warren and P.J. Root.
 \newblock {The Behavior of Naturally Fractured Reservoirs}.
 \newblock \emph{Society of Petroleum Engineers Journal}, 3\penalty0
   (03):\penalty0 245--255, sep 1963.
@@ -164,7 +155,7 @@ J.~Warren and P.~Root.
 \newblock URL \url{http://www.onepetro.org/doi/10.2118/426-PA}.
 
 \bibitem[Yan et~al.(2016)Yan, Alfi, An, Cao, Wang, and Killough]{Yan2016}
-B.~Yan, M.~Alfi, C.~An, Y.~Cao, Y.~Wang, and J.~E. Killough.
+Bicheng Yan, Masoud Alfi, Cheng An, Yang Cao, Yuhe Wang, and John~E. Killough.
 \newblock {General Multi-Porosity simulation for fractured reservoir modeling}.
 \newblock \emph{Journal of Natural Gas Science and Engineering}, 33:\penalty0
   777--791, jul 2016.
