@@ -54,11 +54,11 @@ In this paper, we compare performances of hybrid models created using various pa
 The simulations in this paper are performed using the Embedded Discrete Fracture Model (EDFM), which is available through the MATLAB Reservoir Simulation Toolbox (MRST) \citep{Lee2001, Lie2015, Moinfar2013}. EDFM uses non-neighbouring connections to facilitate fracture-matrix and fracture-fracture flow. This decouples the matrix grid from the fracture network geometry and eases grid construction. EDFM also allows painless modifications to create hybrid models by removing fractures and updating matrix permeabilities.
 
 \subsection{Data}
-The Discrete Fracture Networks (DFN) used in this study are either (1) generated in 3D using the procedures laid out in \citet{Priest1993}, or (2) created from 2D trace maps of fractures observed in the outcrop of the Jandaira Carbonate Formation in Brazil (Figure \ref{fig:DD}) \citep{Bisdom2017}.
+The Discrete Fracture Networks (DFN) used in this study are either (1) generated in 3D using the procedures laid out in \citet{Priest1993}, or (2) based on realistic fracture networks (Figure \ref{fig:DD}) \citep{Bisdom2017}.
 
 For each 3D DFN, three orthogonal sets of fractures are generated stochastically; the base parameters used are the fracture density ($P_{32}=0.15m^2/m^3$ per fracture set), the power law exponent of fracture sizes ($n_s=1.5$), and the fracture size range ($s_{min}=5m$ and $s_{max}=20m$ in radii). Fractures are circular in shape with an aperture-size ratio of $1.75\times 10^{-5}$. Four different cases are considered: (A) Base parameters, (B) $2\times P_{32}$, (C) $2\times n_s$ and (D) $2\times s_{min}$. In each case, 10 DFN realizations are generated in order to capture variations resulting from the power law size distribution. Examples of these DFNs are shown in Figure \ref{fig:DD_A}, \ref{fig:DD_B}, \ref{fig:DD_C} and \ref{fig:DD_D}.
 
-
+The 2D DFNs are created from a publicly available dataset containing trace maps of fractures observed on outcrops of the Jandaira Carbonate Formation in Brazil. The trace maps used in this study are the Apodi 2 and 4 maps, named after the municipality where the outcrop is located. Both fracture networks are multiscale in nature and exhibit fracture sizes (lengths) ranging across two orders of magnitude \citep{Bisdom2017}. As no reliable aperture information were obtained for these fracture networks, we assumed an aperture-size ratio of $3.5\times 10^{-5}$.
 
 
 
