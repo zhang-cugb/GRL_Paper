@@ -69,20 +69,31 @@ To create a hybrid model, we first need to upscale all fractures smaller than a 
 
 Given $s_p$, once small fractures are upscaled to obtain $K_e$, a SP hybrid model containing only fractures ranging from $[s_p,s_{max}]$ can be constructed. The background permeability used in the hybrid model is $K_e$ instead of $K_m$. Using the FSU curves in Figure \ref{fig:FSU}, for each dataset, we created a set of hybrid models corresponding to different $s_p$. 
 
-Describe test conditions the DFNs were subject to.
+The hybrid models, along with the original full DFN model, are subjected to similar production conditions in order to compare their performances. The 3D DFN models are tested using fixed pressure boundary conditions while the 2D outcrop-based models are tested using a well test drawdown using a fixed flowrate sink (Figure \ref{fig:DD}). In all cases, initial pressure is $100 bars$ and typical oil properties are used ($\rho_o=700 kg/m^3$, $\mu_o=5 cP$, $c_o=10^{-5} {bars}^{-1}$). The results of these drawdown tests are shown in Figure \ref{fig:DD}.
 
 \section{Results}
 \subsection{Effective Permeability and Partitioning Size}
+Numerical FSU results are shown in Figure \ref{fig:FSU} for the four 3D cases and outcrop-based DFNs. For the 3D cases, since a stochastic method is used to generate the DFNs, in order to capture variations due to the power law size distribution, 10 realizations were created for each parameter set. 
+
+The FSU curves show that $K_e/K_m$ increases monotonically with with $s_p$. This is because as $s_p$ increases, the size range of fractures that are upscaled increases, resulting in a denser fracture subset. This naturally enhances the overall conductivity of the subset.
+
+It can also be observed that the FSU curves show a percolation behaviour, where $K_e$ suddenly increases rapidly past some threshold $s_p$. This implies that with low $s_p$ values, fracture subsets are not well connected, but as $s_p$ increases, not only does the number of fractures in the subset increase, but the connectivity of the fracture subset increases as well. This will have implications on the suitability of representing a fracture subset as a Single Porosity medium.
+
+When the fracture density is doubled (Case B), for the same $s_p$, the resulting fracture subset contains more fractures, which would result in a higher overall conductivity. The fracture subset would also be more likely to become connected. This is reflected in Figure \ref{fig:FSU_B} which shows higher overall $K_e$ and an earlier percolation.
+
+In Case C, where the power law size exponent is doubled, this results in a higher proportion of small sized fractures, which causes the fracture subset to percolate earlier, as seen in Figure \ref{fig:FSU_C}. In Case D, the range of fracture sizes is smaller. Subsequently, $K_e$ begins to increase rapidly from the smallest $s_p$, as seen in \ref{fig:FSU_C}. 
+
 \subfile{FSU/FSU_main.tex}
 
 \subsection{Single Phase Flow in Hybrid Models}
 \subfile{DD_main/DD_figs.tex}
+Discuss shape of curves for 3D and 2D cases. Why plateaus and dips, etc? Discuss how the deviations are minimal initially but grow rapidly.
 
 
 \subsection{Accuracy of Effective Medium Theory}
 See Figure \ref{fig:FSU}.
 
-Describe how FSU using EMT matches very well for 3D cases.
+Describe how FSU using EMT matches very well for most 3D cases. Discuss asymmetric and symmetric EMT - in Pal's study asymmetric gives correct asymptotic behaviour but tends to mis-predict percolation thresholds, vice versa, and same behaviour is observed here.
 
 Discuss time savings using EMT.
 
