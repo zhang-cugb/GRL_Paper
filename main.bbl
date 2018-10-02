@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -35,6 +35,32 @@ E.~Bonnet, O.~Bour, N.~E. Odling, P.~Davy, I.~Main, P.~Cowie, and B.~Berkowitz.
 \newblock \doi{10.1029/1999RG000074}.
 \newblock URL \url{http://doi.wiley.com/10.1029/1999RG000074}.
 
+\bibitem[Bourbiaux(2010)]{Bourbiaux2010}
+B.~Bourbiaux.
+\newblock {Fractured Reservoir Simulation: a Challenging and Rewarding Issue}.
+\newblock \emph{Oil {\&} Gas Science and Technology – Revue de l'Institut
+  Fran{\c{c}}ais du P{\'{e}}trole}, 65\penalty0 (2):\penalty0 227--238, 2010.
+\newblock ISSN 1294-4475.
+\newblock \doi{10.2516/ogst/2009063}.
+
+\bibitem[Bourdet et~al.(1989)Bourdet, Ayoub, and Pirard]{Bourdet1989}
+D.~Bourdet, J.~Ayoub, and Y.~Pirard.
+\newblock {Use of Pressure Derivative in Well Test Interpretation}.
+\newblock \emph{SPE Formation Evaluation}, 4\penalty0 (02):\penalty0 293--302,
+  jun 1989.
+\newblock ISSN 0885-923X.
+\newblock \doi{10.2118/12777-PA}.
+\newblock URL \url{http://www.onepetro.org/doi/10.2118/12777-PA}.
+
+\bibitem[{Cinco L.} et~al.(1976){Cinco L.}, {Samaniego V.}, and {Dominguez
+  A.}]{Cinco-Ley1976}
+H.~{Cinco L.}, F.~{Samaniego V.}, and N.~{Dominguez A.}
+\newblock {Unsteady-State Flow Behavior for a Well Near a Natural Fracture}.
+\newblock In \emph{SPE Annual Fall Technical Conference and Exhibition}.
+  Society of Petroleum Engineers, apr 1976.
+\newblock \doi{10.2118/6019-MS}.
+\newblock URL \url{http://www.onepetro.org/doi/10.2118/6019-MS}.
+
 \bibitem[Durlofsky(1991)]{Durlofsky1991}
 L.~J. Durlofsky.
 \newblock {Numerical calculation of equivalent grid block permeability tensors
@@ -44,6 +70,18 @@ L.~J. Durlofsky.
 \newblock ISSN 00431397.
 \newblock \doi{10.1029/91WR00107}.
 \newblock URL \url{http://doi.wiley.com/10.1029/91WR00107}.
+
+\bibitem[Egya et~al.(2018)Egya, Geiger, Corbett, March, Bisdom, Bertotti, and
+  Bezerra]{Egya2018}
+D.~O. Egya, S.~Geiger, P.~W.~M. Corbett, R.~March, K.~Bisdom, G.~Bertotti, and
+  F.~H. Bezerra.
+\newblock {Analysing the limitations of the dual-porosity response during well
+  tests in naturally fractured reservoirs}.
+\newblock \emph{Petroleum Geoscience}, pages petgeo2017--053, jan 2018.
+\newblock ISSN 1354-0793.
+\newblock \doi{10.1144/petgeo2017-053}.
+\newblock URL
+  \url{http://pg.lyellcollection.org/lookup/doi/10.1144/petgeo2017-053}.
 
 \bibitem[Elfeel et~al.(2013)Elfeel, Jamal, Enemanna, Arnold, and
   Geiger]{Elfeel2013}
@@ -67,6 +105,14 @@ D.~O. Ezulike and H.~Dehghanpour.
 \newblock \doi{10.2118/167126-MS}.
 \newblock URL \url{http://www.onepetro.org/doi/10.2118/167126-MS}.
 
+\bibitem[Gringarten(1987)]{Gringarten1987}
+A.~C. Gringarten.
+\newblock {How to recognize 'double-porosity' systems from well tests}.
+\newblock \emph{Journal of Petroleum Technology}, 39\penalty0 (6):\penalty0
+  631--633, 1987.
+\newblock ISSN 00084433.
+\newblock \doi{10.2118/16437-PA}.
+
 \bibitem[Lee et~al.(2001)Lee, Lough, and Jensen]{Lee2001}
 S.~H. Lee, M.~F. Lough, and C.~L. Jensen.
 \newblock {Hierarchical modeling of flow in naturally fractured formations with
@@ -76,6 +122,26 @@ S.~H. Lee, M.~F. Lough, and C.~L. Jensen.
 \newblock ISSN 00431397.
 \newblock \doi{10.1029/2000WR900340}.
 \newblock URL \url{http://doi.wiley.com/10.1029/2000WR900340}.
+
+\bibitem[Lemonnier and Bourbiaux(2010{\natexlab{a}})]{Lemonnier2010}
+P.~Lemonnier and B.~Bourbiaux.
+\newblock {Simulation of Naturally Fractured Reservoirs. State of the Art}.
+\newblock \emph{Oil {\&} Gas Science and Technology – Revue de l'Institut
+  Fran{\c{c}}ais du P{\'{e}}trole}, 65\penalty0 (2):\penalty0 263--286, apr
+  2010{\natexlab{a}}.
+\newblock ISSN 1294-4475.
+\newblock \doi{10.2516/ogst/2009067}.
+\newblock URL \url{http://dx.doi.org/10.2516/ogst/2009067}.
+
+\bibitem[Lemonnier and Bourbiaux(2010{\natexlab{b}})]{Lemonnier2010a}
+P.~Lemonnier and B.~Bourbiaux.
+\newblock {Simulation of Naturally Fractured Reservoirs. State of the Art}.
+\newblock \emph{Oil {\&} Gas Science and Technology – Revue de l'Institut
+  Fran{\c{c}}ais du P{\'{e}}trole}, 65\penalty0 (2):\penalty0 239--262, apr
+  2010{\natexlab{b}}.
+\newblock ISSN 1294-4475.
+\newblock \doi{10.2516/ogst/2009066}.
+\newblock URL \url{http://dx.doi.org/10.2516/ogst/2009066}.
 
 \bibitem[Lie(2015)]{Lie2015}
 K.~Lie.
@@ -162,6 +228,16 @@ J.~Warren and P.~Root.
 \newblock ISSN 0197-7520.
 \newblock \doi{10.2118/426-PA}.
 \newblock URL \url{http://www.onepetro.org/doi/10.2118/426-PA}.
+
+\bibitem[Witherspoon et~al.(1980)Witherspoon, Wang, Iwai, and
+  Gale]{Witherspoon1980}
+P.~A. Witherspoon, J.~S.~Y. Wang, K.~Iwai, and J.~E. Gale.
+\newblock {Validity of Cubic Law for fluid flow in a deformable rock fracture}.
+\newblock \emph{Water Resources Research}, 16\penalty0 (6):\penalty0
+  1016--1024, dec 1980.
+\newblock ISSN 00431397.
+\newblock \doi{10.1029/WR016i006p01016}.
+\newblock URL \url{http://doi.wiley.com/10.1029/WR016i006p01016}.
 
 \bibitem[Yan et~al.(2016)Yan, Alfi, An, Cao, Wang, and Killough]{Yan2016}
 B.~Yan, M.~Alfi, C.~An, Y.~Cao, Y.~Wang, and J.~E. Killough.
