@@ -127,17 +127,16 @@ The process of identifying $s_p^*$ can be further expedited with the help of EMT
 \section{Conclusion}
 Flow modelling in naturally fractured reservoirs is a challenging process due to the multiscale nature of fractures. One of the major difficulties is in the accurate representation of fractures that vary in size. Single Porosity hybrid models that represent small fractures implicitly and large fractures explicitly are useful in this regard. Splitting a fracture set into small and large sets depends on the choice of partitioning size.
 
-We conducted numerical studies using four 3D synthetic datasets and two 2D outcrop based datasets. The drawdown simulations performed on full non-upscaled, and hybrid models confirm that hybrid models created with partitioning sizes does reduce simulation complexity while maintaining accuracy of outputs. However, partitioning sizes must not be unreasonably large. In fact, we observe that there is a threshold partitioning size beyond which Single Porosity hybrid models become significantly inaccurate.
+We conducted numerical studies using four 3D synthetic datasets and two 2D outcrop based datasets. The drawdown simulations performed on full non-upscaled, and hybrid models confirm that hybrid models created with partitioning sizes do reduce simulation complexity while maintaining accuracy of outputs. However, partitioning sizes must not be unreasonably large. In fact, for each dataset, we identified a threshold partitioning size beyond which Single Porosity hybrid models become significantly inaccurate.
 
+For every dataset, we can identify the threshold partitioning size without running any drawdown simulations. By upscaling small fractures with the rock matrix, we obtain effective permeabilities that depend on partitioning size. This permeability-size relationship is also referred to as a Fracture Subset Upscaling curve. The threshold partitioning size coincides with the point on the curve where effective permeability of small fractures begin to increase significantly. 
 
+Finally, we also note that Fracture Subset Upscaling can be performed efficiently using the Effective Medium Theory, which is an analytical upscaling tool. This technique reduces the time needed to generate the permeability-size relationship from hours to seconds. However, the Effective Medium Theory currently does not take into consideration geological features such as abutment relationships and non-uniform spatial distributions of fractures. Where necessary, numerical flow based upscaling can also be used for Fracture Subset Upscaling; this is a much more robust approach, but is significantly more resource intensive.
+\\
 
-\begin{itemize}
-       
-    \item FSU curves exhibit a percolation behaviour and takes on an S-shape. For our studies, $s_p^*$ is consistently located right before fracture subset effective permeability starts to increase rapidly. This is consistent with the requirement that no separation of scale should occur in order to use a SP model.
-    
-    \item Numerical FSU is a slow process which takes hours to complete. For elliptical fractures, FSU can be performed analytically using EMT, which reduces processing time to seconds. FSU results by EMT were shown to match numerical FSU results very well. $s_p^*$ can also be identified from the EMT FSU curves. 
-    
-\end{itemize}
+\textbf{Acknowledments}
+\\
+The authors are grateful to Total, S.A. for funding Daniel Wong's PhD research. We also thank Energi Simulation for funding Sebastian Geiger's Chair in Carbonate Reservoir Simulation. 
 
 
 \bibliography{/Users/danie/Documents/phd-daniel/Bibtex/library}
