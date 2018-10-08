@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -113,6 +113,17 @@ A.~C. Gringarten.
 \newblock ISSN 00084433.
 \newblock \doi{10.2118/16437-PA}.
 
+\bibitem[Hardebol et~al.(2015)Hardebol, Maier, Nick, Geiger, Bertotti, and
+  Boro]{Hardebol2015}
+N.~J. Hardebol, C.~Maier, H.~Nick, S.~Geiger, G.~Bertotti, and H.~Boro.
+\newblock {Multiscale fracture network characterization and impact on flow: A
+  case study on the Latemar carbonate platform}.
+\newblock \emph{Journal of Geophysical Research: Solid Earth}, 120\penalty0
+  (12):\penalty0 8197--8222, dec 2015.
+\newblock ISSN 21699313.
+\newblock \doi{10.1002/2015JB011879}.
+\newblock URL \url{http://doi.wiley.com/10.1002/2015JB011879}.
+
 \bibitem[Lee et~al.(2001)Lee, Lough, and Jensen]{Lee2001}
 S.~H. Lee, M.~F. Lough, and C.~L. Jensen.
 \newblock {Hierarchical modeling of flow in naturally fractured formations with
@@ -147,6 +158,15 @@ P.~Lemonnier and B.~Bourbiaux.
 K.~Lie.
 \newblock \emph{{An Introduction to Reservoir Simulation Using MATLAB}}.
 \newblock SINTEF, 2015.
+
+\bibitem[Makel(2007)]{Makel2007}
+G.~H. Makel.
+\newblock {The modelling of fractured reservoirs: constraints and potential for
+  fracture network geometry and hydraulics analysis}.
+\newblock \emph{Geological Society, London, Special Publications},
+  292:\penalty0 375--403, 2007.
+\newblock ISSN 0305-8719.
+\newblock \doi{10.1144/SP292.21}.
 
 \bibitem[March et~al.(2018)March, Doster, and Geiger]{March2018}
 R.~March, F.~Doster, and S.~Geiger.
@@ -207,6 +227,16 @@ P.~Renard and G.~de~Marsily.
 \newblock \doi{10.1016/S0309-1708(96)00050-4}.
 \newblock URL
   \url{http://linkinghub.elsevier.com/retrieve/pii/S0309170896000504}.
+
+\bibitem[Saevik and Nixon(2017)]{Saevik2017}
+P.~N. Saevik and C.~W. Nixon.
+\newblock {Inclusion of Topological Measurements into Analytic Estimates of
+  Effective Permeability in Fractured Media}.
+\newblock \emph{Water Resources Research}, 53\penalty0 (11):\penalty0
+  9424--9443, nov 2017.
+\newblock ISSN 00431397.
+\newblock \doi{10.1002/2017WR020943}.
+\newblock URL \url{http://doi.wiley.com/10.1002/2017WR020943}.
 
 \bibitem[S{\ae}vik et~al.(2013)S{\ae}vik, Berre, Jakobsen, and
   Lien]{Saevik2013}

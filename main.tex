@@ -17,7 +17,7 @@
 \newcommand{\matr}[1]{\mathbf{#1}}
 \usepackage{subcaption}
 \usepackage{subfiles}
-\usepackage{natbib}
+\usepackage[round]{natbib}
 \bibliographystyle{abbrvnat}
 
 
@@ -42,6 +42,7 @@ Fractured reservoir flow modelling is simplified by upscaling the rock matrix an
 
 Naturally fractured reservoirs (NFR) are exploited in several industries as they (1) may contain oil and gas, (2) can also be used to extract heat from underground, (3) form pathways for groundwater to flow, (4) can be used to store CO2 and mitigate climate change. As such, it is important to predict how fluids will move through NFRs. This is difficult because NFRs contain fractures that differ greatly in size. One approach that alleviates this problem is to represent the smaller fractures by an artificial rock that has a comparable flow behaviour. Our study finds that while this is possible, there is a limit to what can be considered small. When this treatment is applied to fractures that are larger than the limit, the resulting simplified representation fails to capture the correct flow behaviour. We show that this limit can be pre-determined using by studying how the artificial rock properties change with the size range of small fractures. We also show that this procedure can be carried out efficiently using a technique called the Effective Medium Theory. The findings in this study will allow industry practitioners to systematically simplify their NFR flow modelling problems.
 
+\newpage
 \section{Introduction}
 Naturally fractured reservoirs (NFR) are commonplace in nature and of great interest in areas including but not limited to hydrocarbon extraction, geothermal energy production and underground water resources exploitation \citep{Berkowitz2002}. More recently, there has also been 
 interest in NFRs as a potential site for carbon sequestration \citep{March2018}. In all these applications, the central process at play is fluid flow in fractured porous media, and accurately modelling this process is crucial for engineering success.
@@ -117,18 +118,21 @@ From a pragmatic viewpoint, a threshold partitioning size, $s_p^*$, implies that
 
 
 \subsection{\textit{A priori} Identification of Partitioning Threshold}
-So far, we have identified partitioning thresholds, $s_p^*$, based on comparisons of drawdown simulation results. In practice, this is a time consuming process and will not be useful. Instead, we can make use of the FSU curves to identify $s_p^*$. The values of $s_p^*$ as identified from the simulation results in Figure \ref{fig:DD} have been marked out on the FSU curves in Figure \ref{fig:FSU}. As can be seen, 
+So far, we have identified partitioning thresholds, $s_p^*$, based on comparisons of drawdown simulation results. This requires performing FSU across a range of $s_p$ values, then creating a series of hybrid models. The models are then subjected to drawdown simulations and their results are compared in order to identify $s_p^*$.
 
-Discuss how connectivity relates to high Ke/Km ratio
+In practice, this is a time consuming process and will not be useful. Instead, we actually identify $s_p^*$ once we have performed FSU. When small fractures are poorly connected, we expect FSU to produce low $K_e/K_m$ values, vice versa. And since the validity of a SP hybrid model depends on the overall network conductivity of small fractures, $s_p^*$ corresponds to the where $K_e/K_m$ begins to increase rapidly. To illustrate this, the values of $s_p^*$ as identified from our simulation results in Figure \ref{fig:DD} have been marked out on the FSU curves in Figure \ref{fig:FSU}. As expected, $K_e/K_m$ remains relatively low when $s_p<s_p^*$ and grows quickly as $s_p>s_p^*$. 
 
-Discuss identification of $s_p^*$ by plotting $K_{eff}/K_m$ against $s_p$ and where $s_p^*$ is located on the FSU curves.
+The process of identifying $s_p^*$ can be further expedited with the help of EMT. As was shown in Figure \ref{fig:FSU}, for uncorrelated fracture sets, with fractures uniformly distributed in space, performing FSU with EMT yields results that match numerical flow based upscaling. However, EMT achieves this in seconds rather than hours. In reality, fracture networks may be less conductive than predicted by EMT. This is because fracture sets are usually correlated with each other through abutment relationships. This correlation results in less intersections per fracture than expected. Research is currently still ongoing to incorporate such relationships in analytical upscaling tools \citep{Hardebol2015, Makel2007, Saevik2017}. 
 
 \section{Conclusion}
-We performed numerical studies on full and hybrid models of fracture systems (created with varying partitioning sizes) by subjecting them to similar production conditions. Analysis of the results obtained showed that:
+Flow modelling in naturally fractured reservoirs is a challenging process due to the multiscale nature of fractures. One of the major difficulties is in the accurate representation of fractures that vary in size. Single Porosity hybrid models that represent small fractures implicitly and large fractures explicitly are useful in this regard. Splitting a fracture set into small and large sets depends on the choice of partitioning size.
+
+We conducted numerical studies using four 3D synthetic datasets and two 2D outcrop based datasets. The drawdown simulations performed on full non-upscaled, and hybrid models confirm that hybrid models created with partitioning sizes does reduce simulation complexity while maintaining accuracy of outputs. However, partitioning sizes must not be unreasonably large. In fact, we observe that there is a threshold partitioning size beyond which Single Porosity hybrid models become significantly inaccurate.
+
+
 
 \begin{itemize}
-    \item There exists a threshold partitioning size, $s_p^*$ beyond which SP hybrid modelling is observed to produce significant errors compared to the full model reference solution. This is evident in both generated 3D DFNs and realistic fracture networks traced from outcrops.
-    
+       
     \item FSU curves exhibit a percolation behaviour and takes on an S-shape. For our studies, $s_p^*$ is consistently located right before fracture subset effective permeability starts to increase rapidly. This is consistent with the requirement that no separation of scale should occur in order to use a SP model.
     
     \item Numerical FSU is a slow process which takes hours to complete. For elliptical fractures, FSU can be performed analytically using EMT, which reduces processing time to seconds. FSU results by EMT were shown to match numerical FSU results very well. $s_p^*$ can also be identified from the EMT FSU curves. 
