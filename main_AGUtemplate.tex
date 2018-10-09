@@ -1,0 +1,646 @@
+%% March 2018
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% AGUJournalTemplate.tex: this template file is for articles formatted with LaTeX
+%
+% This file includes commands and instructions
+% given in the order necessary to produce a final output that will
+% satisfy AGU requirements, including customized APA reference formatting.
+%
+% You may copy this file and give it your
+% article name, and enter your text.
+%
+%
+% Step 1: Set the \documentclass
+%
+% There are two options for article format:
+%
+% PLEASE USE THE DRAFT OPTION TO SUBMIT YOUR PAPERS.
+% The draft option produces double spaced output.
+%
+
+%% To submit your paper:
+\documentclass[draft]{agujournal2018}
+\usepackage{apacite}
+\usepackage{url} %this package should fix any errors with URLs in refs.
+\usepackage{lineno}
+\linenumbers
+%%%%%%%
+% As of 2018 we recommend use of the TrackChanges package to mark revisions.
+% The trackchanges package adds five new LaTeX commands:
+%
+%  \note[editor]{The note}
+%  \annote[editor]{Text to annotate}{The note}
+%  \add[editor]{Text to add}
+%  \remove[editor]{Text to remove}
+%  \change[editor]{Text to remove}{Text to add}
+%
+% complete documentation is here: http://trackchanges.sourceforge.net/
+%%%%%%%
+
+\draftfalse
+
+%% Enter journal name below.
+%% Choose from this list of Journals:
+%
+% JGR: Atmospheres
+% JGR: Biogeosciences
+% JGR: Earth Surface
+% JGR: Oceans
+% JGR: Planets
+% JGR: Solid Earth
+% JGR: Space Physics
+% Global Biogeochemical Cycles
+% Geophysical Research Letters
+% Paleoceanography and Paleoclimatology
+% Radio Science
+% Reviews of Geophysics
+% Tectonics
+% Space Weather
+% Water Resources Research
+% Geochemistry, Geophysics, Geosystems
+% Journal of Advances in Modeling Earth Systems (JAMES)
+% Earth's Future
+% Earth and Space Science
+% Geohealth
+%
+% ie, \journalname{Water Resources Research}
+
+\journalname{Geophysical Research Letters}
+
+
+\begin{document}
+
+%% ------------------------------------------------------------------------ %%
+%  Title
+%
+% (A title should be specific, informative, and brief. Use
+% abbreviations only if they are defined in the abstract. Titles that
+% start with general keywords then specific terms are optimized in
+% searches)
+%
+%% ------------------------------------------------------------------------ %%
+
+% Example: \title{This is a test title}
+
+\title{Partitioning Thresholds in Hybrid Implicit and Explicit Representations of Naturally Fractured Reservoirs}
+
+%% ------------------------------------------------------------------------ %%
+%
+%  AUTHORS AND AFFILIATIONS
+%
+%% ------------------------------------------------------------------------ %%
+
+% Authors are individuals who have significantly contributed to the
+% research and preparation of the article. Group authors are allowed, if
+% each author in the group is separately identified in an appendix.)
+
+% List authors by first name or initial followed by last name and
+% separated by commas. Use \affil{} to number affiliations, and
+% \thanks{} for author notes.
+% Additional author notes should be indicated with \thanks{} (for
+% example, for current addresses).
+
+% Example: \authors{A. B. Author\affil{1}\thanks{Current address, Antartica}, B. C. Author\affil{2,3}, and D. E.
+% Author\affil{3,4}\thanks{Also funded by Monsanto.}}
+
+\authors{Daniel Wong\affil{1}, Florian Doster\affil{1}, Sebastian Geiger\affil{1}, Arjan Kamp\affil{2}}
+
+
+% \affiliation{1}{First Affiliation}
+% \affiliation{2}{Second Affiliation}
+% \affiliation{3}{Third Affiliation}
+% \affiliation{4}{Fourth Affiliation}
+
+\affiliation{1}{Institute of Petroleum Engineering, Heriot-Watt University}
+\affiliation{2}{Total S.A.}
+%(repeat as many times as is necessary)
+
+%% Corresponding Author:
+% Corresponding author mailing address and e-mail address:
+
+% (include name and email addresses of the corresponding author.  More
+% than one corresponding author is allowed in this LaTeX file and for
+% publication; but only one corresponding author is allowed in our
+% editorial system.)
+
+% Example: \correspondingauthor{First and Last Name}{email@address.edu}
+
+\correspondingauthor{Daniel Wong}{dlw1@hw.ac.uk}
+
+%% Keypoints, final entry on title page.
+
+%  List up to three key points (at least one is required)
+%  Key Points summarize the main points and conclusions of the article
+%  Each must be 100 characters or less with no special characters or punctuation
+
+% Example:
+% \begin{keypoints}
+% \item	List up to three key points (at least one is required)
+% \item	Key Points summarize the main points and conclusions of the article
+% \item	Each must be 100 characters or less with no special characters or punctuation
+% \end{keypoints}
+
+\begin{keypoints}
+\item Small fractures up to a threshold size can be lumped with the rock matrix and upscaled into an equivalent porous medium.
+\item We determine threshold sizes from relationship between upscaled permeabilities and the size range of fractures that are considered small.
+\item Where applicable, Effective Medium Theory efficiently establishes the permeability-size relationship compared to numerical upscaling.
+\end{keypoints}
+
+%% ------------------------------------------------------------------------ %%
+%
+%  ABSTRACT
+%
+% A good abstract will begin with a short description of the problem
+% being addressed, briefly describe the new data or analyses, then
+% briefly states the main conclusion(s) and how they are supported and
+% uncertainties.
+%% ------------------------------------------------------------------------ %%
+
+%% \begin{abstract} starts the second page
+
+\begin{abstract}
+Fractured reservoir flow modelling is simplified by upscaling the rock matrix an fractures smaller than a partitioning size into an equivalent porous medium, while representing large fractures explicitly. The resulting model is a Single Porosity hybrid model. Small partitioning sizes lead to higher computational costs while large partitioning sizes deteriorate the quality of the simulation. We studied the impact of hybrid modelling on artificial and realistic datasets. For each dataset, beyond a threshold partitioning size, hybrid model results deviate significantly from full model solutions. The threshold can be identified from the relationship between upscaled permeabilities and partitioning sizes; it corresponds to the point where the effective permeability of small fractures begin to increase rapidly. We show that the permeability-size relationship can be obtained quickly using the Effective Medium Theory whenever applicable. Alternatively, the slower but robust numerical flow based approach can be used.
+
+\end{abstract}
+
+\textbf{Plain Language Summary:} Naturally fractured reservoirs (NFR) are exploited in several industries as they (1) may contain oil and gas, (2) can also be used to extract heat from underground, (3) form pathways for groundwater to flow, (4) can be used to store CO2 and mitigate climate change. As such, it is important to predict how fluids will move through NFRs. This is difficult because NFRs contain fractures that differ greatly in size. One approach that alleviates this problem is to represent the smaller fractures by an artificial rock that has a comparable flow behaviour. Our study finds that while this is possible, there is a limit to what can be considered small. When this treatment is applied to fractures that are larger than the limit, the resulting simplified representation fails to capture the correct flow behaviour. We show that this limit can be pre-determined using by studying how the artificial rock properties change with the size range of small fractures. We also show that this procedure can be carried out efficiently using a technique called the Effective Medium Theory. The findings in this study will allow industry practitioners to systematically simplify their NFR flow modelling problems.
+
+
+
+%% ------------------------------------------------------------------------ %%
+%
+%  TEXT
+%
+%% ------------------------------------------------------------------------ %%
+
+%%% Suggested section heads:
+% \section{Introduction}
+%
+% The main text should start with an introduction. Except for short
+% manuscripts (such as comments and replies), the text should be divided
+% into sections, each with its own heading.
+
+% Headings should be sentence fragments and do not begin with a
+% lowercase letter or number. Examples of good headings are:
+
+% \section{Materials and Methods}
+% Here is text on Materials and Methods.
+%
+% \subsection{A descriptive heading about methods}
+% More about Methods.
+%
+% \section{Data} (Or section title might be a descriptive heading about data)
+%
+% \section{Results} (Or section title might be a descriptive heading about the
+% results)
+%
+% \section{Conclusions}
+
+
+\section{Introduction}
+Naturally fractured reservoirs (NFR) are commonplace in nature and of great interest in areas including but not limited to hydrocarbon extraction, geothermal energy production and underground water resources exploitation \citep{Berkowitz2002}. More recently, there has also been 
+interest in NFRs as a potential site for carbon sequestration \citep{March2018}. In all these applications, the central process at play is fluid flow in fractured porous media, and accurately modelling this process is crucial for engineering success.
+
+However, the highly heterogeneous nature of NFRs makes flow modelling difficult. Instead of representing all fractures in a simulation model, a popular approach, known as the continuum method, is to represent the fracture network as equivalent porous media \citep{Ezulike2013, Lemonnier2010a, Lemonnier2010, Warren1963, Yan2016}. The conversion from discrete fractures to a continuum representation involves an averaging process known as upscaling, which can be performed numerically or analytically \citep{Durlofsky1991,Oda1985,Renard1997,Saevik2013}. 
+
+In this paper, we make extensive use of an analytical upscaling tool known as the Effective Medium Theory (EMT) which was recently adapted for fractured porous media, and was shown to outperform traditional techniques like Oda's method. This is because EMT directly addresses the effects of fracture sizes on upscaled permeabilities while Oda's method assumes fractures have infinite length, which automatically implies well-connectedness \citep{Oda1985, Saevik2013, Saevik2014}.
+
+For multiscale NFRs, unfortunately, upscaled equivalent permeability fields have been shown to be dependent on the choice of homogenization scale; this will eventually lead to varying flow modelling outcomes \citep{Elfeel2013}. In particular, NFRs tend to contain fractures with various sizes that oftentimes follow a power law distribution \citep{Bonnet2001}. This implies that no Representative Elementary Volume (REV) can be defined, which invalidates the upscaling step necessary in continuum modelling \citep{Berkowitz2002}.
+
+Nevertheless, as fully resolving all fractures in a simulation model is prohibitively expensive, model simplification is still highly desirable. One way forward is to use a divide-and-conquer approach known as hybrid modelling \citep{Berkowitz2002, Bourbiaux2010}. In this method, the fracture network has to be partitioned into two sets: one set with fracture sizes less than the partitioning size, and another with larger fractures. Using either numerical or analytical upscaling, small fractures and the rock matrix are replaced with equivalent porous media. Meanwhile, the large fractures are explicitly represented. Constructing a hybrid model using a small partitioning size preserves as much details as possible, at the expense of computational efficiency. On the other hand, large partitioning sizes yield significant model reductions, but at the cost of model accuracy.
+
+In this paper, we compare performances of hybrid models created using various partitioning sizes against full model solutions. The hybrid models are constructed by upscaling the matrix and small fractures into a single continuum, and as such are called Single Porosity (SP) hybrid models. The results ascertain that hybrid models can indeed be used to simplify complex fractured reservoir simulations, but is restricted to partitioning sizes below observed thresholds. From the relationship between effective permeability and partitioning size, we also observe that the thresholds correspond with partitioning sizes where the effective permeability of small fractures begin to increase rapidly. This relationship can be produced using numerical flow based upscaling, but for penny shaped fractures, the more efficient EMT can also be used.
+
+\section{Methods}
+
+\subsection{Data}
+The Discrete Fracture Networks (DFN) used in this study are either (1) generated in 3D using the procedures laid out in \citet{Priest1993}, or (2) based on realistic fracture networks (Figure \ref{fig:DD}) \citep{Bisdom2017}.
+
+For each 3D DFN, three orthogonal sets of fractures are generated stochastically \citep{Priest1993}. The base parameters used are the fracture density ($P_{32}=0.15m^2/m^3$ per fracture set), the power law exponent of fracture sizes ($n_s=1.5$), and the fracture size range ($s_{min}=5m$ and $s_{max}=20m$ in radii) \citep{Bonnet2001, Dershowitz1992}. Fractures are circular in shape with an aperture-size ratio of $1.75\times 10^{-5}$. Aperture is used to calculate fracture intrinsic permeabilities using the cubic law \citep{Witherspoon1980}. Rock permeability used is $K_m=10mD$. Four different cases are considered here: (A) Base parameters as has been presented, (B) $2\times P_{32}$, (C) $2\times n_s$ and (D) $2\times s_{min}$. Examples of these DFNs are shown in Figure \ref{fig:DD}. Additionally, nine other cases were also studied; the parameters used are documented in Text S1 and Table S1.
+
+The 2D DFNs are created from a publicly available dataset containing trace maps of fractures observed on outcrops of the Jandaira Carbonate Formation in Brazil. The trace maps used in this study are the Apodi 2 and 4 maps, named after the municipality where the outcrop is located. Both fracture networks are multiscale in nature and exhibit fracture sizes (lengths) ranging across two orders of magnitude \citep{Bisdom2017}. As no reliable aperture information were obtained for these fracture networks, we assume an aperture-size ratio of $3.5\times 10^{-5}$ and again use the cubic law. Rock permeability used is $K_m=1mD$. The fracture networks are shown in Figures \ref{fig:DD}.
+
+
+\subsection{Simulation Setup}
+The simulations in this paper are performed using the Embedded Discrete Fracture Model (EDFM), which is available through the MATLAB Reservoir Simulation Toolbox (MRST) \citep{Lee2001, Lie2015, Moinfar2013}. EDFM uses non-neighbouring connections to facilitate fracture-matrix and fracture-fracture flow. This decouples the matrix grid from the fracture network geometry and eases grid construction. EDFM also allows painless modifications to create hybrid models by removing fractures and updating matrix permeabilities.
+
+To create a hybrid model, we first need to upscale all fractures smaller than a selected partitioning size, $s_p$ - we call this Fracture Subset Upscaling (FSU). FSU using EDFM is done by solving the Laplace equation for a square domain containing only fractures with sizes in $[s_{min},s_p]$, subject to a pressure differential on two opposing boundaries, and no-flow boundary on the remaining ones. This yields a flow field that can be used to calculate an effective permeability, $K_{e}$, using Darcy's law. The calculated $K_{e}$ is a function of $s_p$. For the 3D DFNs, FSU was also performed using EMT. The results are summarized in FSU curves (Figure \ref{fig:FSU} and S1) that plot $K_{e}/K_m$ against $s_p$, where $K_m$ is rock matrix permeability.
+
+Given $s_p$, once small fractures are upscaled to obtain $K_e$, a SP hybrid model containing only fractures ranging from $[s_p,s_{max}]$ can be constructed. The background permeability used in the hybrid model is $K_e$ instead of $K_m$. Using the FSU curves in Figures \ref{fig:FSU} and S1, for each dataset, we created a set of hybrid models corresponding to different $s_p$. 
+
+The hybrid models, along with the original full DFN model, are subjected to similar production conditions in order to compare their performances. The 3D DFN models are tested using fixed pressure boundary conditions while the 2D outcrop-based models are tested using a well test drawdown with a fixed flowrate sink (Figure \ref{fig:DD} and S3). In all cases, initial pressure is $100 bars$ and typical oil properties are used ($\rho_o=700 kg/m^3$, $\mu_o=5 cP$, $c_o=10^{-5} {bars}^{-1}$). The results of these drawdown tests are shown in Figures \ref{fig:DD}, S2 and S3.
+
+\section{Results}
+\subsection{Effective Permeability and Partitioning Size}
+Numerical FSU results are shown in Figure \ref{fig:FSU} for the four 3D cases and outcrop-based DFNs. Results for the additional 3D cases are shown in Figure S1. For the 3D cases, since a stochastic method is used to generate the DFNs, in order to capture variations due to the power law size distribution, 10 realizations were created for each parameter set. 
+
+The FSU curves show that $K_e/K_m$ increases monotonically with with $s_p$. This is because as $s_p$ increases, the size range of fractures that are upscaled increases, resulting in a denser fracture subset. This naturally enhances the overall conductivity of the subset.
+
+It can also be observed that the FSU curves show a percolation behaviour, where $K_e$ suddenly increases rapidly past some threshold $s_p$. This implies that with low $s_p$ values, fracture subsets are not well connected, but as $s_p$ increases, not only does the number of fractures in the subset increase, but the connectivity of the fracture subset increases as well. This will have implications on the suitability of representing a fracture subset as a Single Porosity medium.
+
+Referring to Figure \ref{fig:FSU}, for the 3D cases, when the fracture density is doubled (Case B), for the same $s_p$, the resulting fracture subset contains more fractures, which would result in a higher overall conductivity. The fracture subset would also be more likely to become connected. This is reflected in the FSU curve which shows higher overall $K_e$ and an earlier percolation. In Case C, where the power law size exponent is doubled, this results in a higher proportion of small sized fractures, which causes the fracture subset to percolate earlier. In Case D, the range of fracture sizes is smaller. Subsequently, $K_e$ begins to increase rapidly from the smallest $s_p$.
+
+\begin{figure}[h]
+ \centering
+
+ \includegraphics[width=\textwidth]{FSU/FSU_main.jpg}
+
+ \caption{Fracture Subset Upscaling. Cases A to D correspond to generated 3D DFNs. To capture variations due to the power law size distribution used, 10 stochastic realizations were created for each case. Apodi 2 and 4 are outcrop based fracture data. Partitioning sizes that are above the threshold produce hybrid models that are inaccurate according to Figure \ref{fig:DD}.}
+ \label{fig:FSU}
+\end{figure}
+
+\subsection{Single Phase Flow in Hybrid Models}
+In Figure \ref{fig:DD}, we show the results for six drawdown studies based on our datasets. We further performed eleven drawdown studies that are shown in Figures S2 and S3. In all studies, we show full model solutions based on the original non-upscaled data, which serve as reference solutions. All other solutions are generated from hybrid models corresponding to different $s_p$ values. 
+
+For the 3D DFNs, a fixed pressure boundary (50 bars) is applied on the models to simulate a drawdown. The outputs of the simulations are plots of flowrate at the outlet against time. Due to the high fracture-to-rock permeability ratio, the pressure drop preferentially diffuses through the fracture network, before diffusing into the rock matrix. This results in two plateaus observed in the outlet flowrate evolution. The first plateau corresponds to when pressure is maintained solely by the fluid in the fracture network. This is a short lived flow regime due to the high fracture conductivity. When the pressure in the fractures depletes significantly, fluid in the rock matrix begins to recharge the fracture network. This results in a second plateau, which we focus on since most of the fluid is stored in the rock (Cases A to D in Figure \ref{fig:DD}, and Figure S2). Finally, when pressure in the entire model depletes, flowrate at the outlet goes to zero.
+
+For Apodi 2 (Figure \ref{fig:DD}), a well is inserted in the rock matrix and drawn down at a fixed rate ($0.1m^3/day$). The pressure derivative response initially shows a straight line due to the wellbore storage effect as pressure is depleted in the well. We then observe an infinite acting regime when the perturbation at the well only diffuses through the matrix; this corresponds to the flat plateau in the derivative plot. Once the effect of the well drawdown reaches the nearest fracture, fluid depletion from the fracture network dominates due to the high fracture conductivities. This results in a dip on the pressure derivative \citep{Bourdet1989, Cinco-Ley1976, Egya2018}. In Figure S3, for Apodi 4, we show similar results for a well intersecting the rock matrix.
+
+In Figure \ref{fig:DD}, we positioned a well to intersect the largest fracture in Apodi 4 and drew down at a fixed rate ($1m^3/day$). In this setup, there is similarly an initial wellbore storage effect which manifests itself in a straight line. The pressure drop at the well then diffuses through the fracture network. In this regime, the rock matrix is effectively impermeable. Once the pressure diffusion reaches the boundaries, fluid pressure in the fractures begin to drop significantly. The fluid contained in the rock matrix then begins to recharge the fracture network. This results in a dip on the pressure derivative as well \citep{Gringarten1987}. In Figure S3, for Apodi 2, we show similar results for a well intersecting the largest fracture.
+
+In all drawdown studies, for small $s_p$ values, deviations are minimal, which ascertains that hybrid models do have the capability to simplify simulations while preserving accuracy. However, it is observed that as $s_p$ increases, the corresponding hybrid model produces results that deviate further away from the reference solution. This suggests a trade-off relationship between model simplicity and accuracy. Large $s_p$ values result in simpler models due to more fractures being upscaled, but produces less accurate models, vice versa. From a practical viewpoint, we seek an intermediate $s_p$ which allows us to balance both needs. 
+
+\begin{figure}[h]
+	\centering
+	
+	\includegraphics[width=\textwidth]{DD_main/DD_main.jpg}
+	
+	\caption{Drawdown curves for fully resolve models, and hybrid models corresponding to different partitioning sizes. Cases A to D: One full DFN realization is used per case. Fixed pressure is applied on blue faces. Domain size is 100m x 100m x 100m in all cases. Apodi 2 and 4: Fixed flowrate is applied at locations marked with blue circle. Domain size is 220m x 220m x 1m and 100m x 100m x 1m for Apodi 2 and 4 respectively.}
+	\label{fig:DD}
+\end{figure}
+
+\subsection{Accuracy of Effective Medium Theory}
+The FSU curves generated for the 3D DFNs using EMT are also shown in Figures \ref{fig:FSU} and S1. In general, there is a good match between the results obtained from both numerical and analytical approaches. The main limitation that prevents EMT from being used for the Apodi 2 and 4 datasets is that EMT does not take into consideration the abutment relationships between fracture sets. However, in our studies, EMT is significantly more efficient than numerical flow based upscaling and reduces the FSU processing time from hours to seconds.
+
+Two different formulations of EMT were used for comparison - the asymmetric and symmetric self-consistent versions. In existing benchmarking studies using constant sized fracture networks, the former has been shown to have better performance at higher fracture densities than the latter, but tends to over-predict effective permeability \citep{Saevik2013, Saevik2014}. In our study, we observe that the symmetric self-consistent EMT performs best in terms of overall $K_e$ calculations. However, similar to \citet{Saevik2013}, we note that in the high density case, the asymmetric version of EMT becomes more accurate at high $s_p$ values.
+
+\section{Discussion}
+\subsection{Effect of Partitioning Size on Response Accuracy}
+In the drawdown studies (Figure \ref{fig:DD}, S2 and S3), it is observed that the deviations resulting from upscaling increase abruptly as $s_p$ is increased. Hybrid models created with small $s_p$ produce drawdown results that are very similar to the corresponding full model responses. However, above a threshold partitioning size, $s_p^*$, the hybrid models begin to produce results with large deviations. The only exception is Case D, which shows significant differences even at a very small $s_p$; this is due to the small fracture size range used, which results in a large proportion of fractures being upscaled even with small $s_p$ values.
+
+This is in line with our understanding that in order for a single porosity representation to be valid, we have to ensure that there is no separation of scale between fluid flow in the matrix and the upscaled fracture network \citep{Matthai2004a}. For small $s_p$ values, the small fractures are disperse and poorly connected. Pressure perturbations diffuse through the rock matrix and small fractures at almost equal rates. However, for large $s_p$ values, the small fractures are populous and become well connected. In this case, pressure perturbations will preferentially diffuse through the small fractures before affecting the fluid in the rock. $s_p^*$ is the threshold where the small fractures begin to become connected. As such, for a SP hybrid model to be used, $s_p$ necessarily has to be smaller than $s_p^*$.
+
+From a pragmatic viewpoint, a threshold partitioning size, $s_p^*$, implies that while we can reduce computational load by upscaling small fractures, there is a limit to how large $s_p$ can be. This is because as $s_p$ increases beyond $s_p^*$, we begin to simplify our simulation model at the expense of output accuracy. Additionally, determining $s_p^*$ also allows us to make informed decisions on how best to simplify our simulation models. Based on available computational resources, we can determine a minimum grid size, $l_{grid}$ for our simulations. If $s_p^*$ is larger than $l_{grid}$, then we can use a SP hybrid model by upscaling all fractures smaller than $l_{grid}$. If not, then a Dual Porosity (DP) hybrid model may be required.
+
+
+\subsection{\textit{A priori} Identification of Partitioning Threshold}
+So far, we have identified partitioning thresholds, $s_p^*$, based on comparisons of drawdown simulation results. This requires performing FSU across a range of $s_p$ values, then creating a series of hybrid models. The models are then subjected to drawdown simulations and their results are compared in order to identify $s_p^*$.
+
+In practice, this is a time consuming process and will not be useful. Instead, we actually identify $s_p^*$ once we have performed FSU. When small fractures are poorly connected, we expect FSU to produce low $K_e/K_m$ values, vice versa. And since the validity of a SP hybrid model depends on the overall network conductivity of small fractures, $s_p^*$ corresponds to the where $K_e/K_m$ begins to increase rapidly. To illustrate this, the values of $s_p^*$ as identified from our simulation results in Figures \ref{fig:DD}, S2 and S3 have been marked out on the FSU curves in Figures \ref{fig:FSU} and S1. As expected, $K_e/K_m$ remains relatively low when $s_p<s_p^*$ and grows quickly as $s_p>s_p^*$. 
+
+The process of identifying $s_p^*$ can be further expedited with the help of EMT. As was shown in Figures \ref{fig:FSU} and S1, for uncorrelated fracture sets, with fractures uniformly distributed in space, performing FSU with EMT yields results that match numerical flow based upscaling. However, EMT achieves this in seconds rather than hours. In reality, fracture networks may be less conductive than predicted by EMT. This is because fracture sets are usually correlated with each other through abutment relationships. This correlation results in less intersections per fracture than expected. Research is currently still ongoing to incorporate such relationships in analytical upscaling tools \citep{Hardebol2015, Makel2007, Saevik2017}. 
+
+\section{Conclusion}
+Flow modelling in naturally fractured reservoirs is a challenging process due to the multiscale nature of fractures. One of the major difficulties is in the accurate representation of fractures that vary in size. Single Porosity hybrid models that represent small fractures implicitly and large fractures explicitly are useful in this regard. Splitting a fracture set into small and large sets depends on the choice of partitioning size.
+
+We conducted numerical studies using four 3D synthetic datasets and two 2D outcrop based datasets. The drawdown simulations performed on full non-upscaled, and hybrid models confirm that hybrid models created with partitioning sizes do reduce simulation complexity while maintaining accuracy of outputs. However, partitioning sizes must not be unreasonably large. In fact, for each dataset, we identified a threshold partitioning size beyond which Single Porosity hybrid models become significantly inaccurate.
+
+For every dataset, we can identify the threshold partitioning size without running any drawdown simulations. By upscaling small fractures with the rock matrix, we obtain effective permeabilities that depend on partitioning size. This permeability-size relationship is also referred to as a Fracture Subset Upscaling curve. The threshold partitioning size coincides with the point on the curve where effective permeability of small fractures begin to increase significantly. 
+
+Finally, we also note that Fracture Subset Upscaling can be performed efficiently using the Effective Medium Theory, which is an analytical upscaling tool. This technique reduces the time needed to generate the permeability-size relationship from hours to seconds. However, the Effective Medium Theory currently does not take into consideration geological features such as abutment relationships and non-uniform spatial distributions of fractures. Where necessary, numerical flow based upscaling can also be used for Fracture Subset Upscaling; this is a much more robust approach, but is significantly more resource intensive.
+%Text here ===>>>
+
+%%
+
+%  Numbered lines in equations:
+%  To add line numbers to lines in equations,
+%  \begin{linenomath*}
+%  \begin{equation}
+%  \end{equation}
+%  \end{linenomath*}
+
+
+
+%% Enter Figures and Tables near as possible to where they are first mentioned:
+%
+% DO NOT USE \psfrag or \subfigure commands.
+%
+% Figure captions go below the figure.
+% Table titles go above tables;  other caption information
+%  should be placed in last line of the table, using
+% \multicolumn2l{$^a$ This is a table note.}
+%
+%----------------
+% EXAMPLE FIGURE
+%
+% \begin{figure}[h]
+% \centering
+% when using pdflatex, use pdf file:
+% \includegraphics[natwidth=800px,natheight=600px]{figsamp.pdf}
+%
+% when using dvips, use .eps file:
+% \includegraphics[natwidth=800px,natheight=600px]{figsamp.eps}
+%
+% \caption{Short caption}
+% \label{figone}
+%  \end{figure}
+%
+% We recommend that you provide the native width and height (natwidth, natheight) of your figures.
+% Specifying native dimensions ensures that your figures are properly scaled
+%
+%
+% ---------------
+% EXAMPLE TABLE
+%
+% \begin{table}
+% \caption{Time of the Transition Between Phase 1 and Phase 2$^{a}$}
+% \centering
+% \begin{tabular}{l c}
+% \hline
+%  Run  & Time (min)  \\
+% \hline
+%   $l1$  & 260   \\
+%   $l2$  & 300   \\
+%   $l3$  & 340   \\
+%   $h1$  & 270   \\
+%   $h2$  & 250   \\
+%   $h3$  & 380   \\
+%   $r1$  & 370   \\
+%   $r2$  & 390   \\
+% \hline
+% \multicolumn{2}{l}{$^{a}$Footnote text here.}
+% \end{tabular}
+% \end{table}
+
+%% SIDEWAYS FIGURE and TABLE
+% AGU prefers the use of {sidewaystable} over {landscapetable} as it causes fewer problems.
+%
+% \begin{sidewaysfigure}
+% \includegraphics[width=20pc]{figsamp}
+% \caption{caption here}
+% \label{newfig}
+% \end{sidewaysfigure}
+%
+%  \begin{sidewaystable}
+%  \caption{Caption here}
+% \label{tab:signif_gap_clos}
+%  \begin{tabular}{ccc}
+% one&two&three\\
+% four&five&six
+%  \end{tabular}
+%  \end{sidewaystable}
+
+%% If using numbered lines, please surround equations with \begin{linenomath*}...\end{linenomath*}
+%\begin{linenomath*}
+%\begin{equation}
+%y|{f} \sim g(m, \sigma),
+%\end{equation}
+%\end{linenomath*}
+
+%%% End of body of article
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optional Appendix goes here
+%
+% The \appendix command resets counters and redefines section heads
+%
+% After typing \appendix
+%
+%\section{Here Is Appendix Title}
+% will show
+% A: Here Is Appendix Title
+%
+%\appendix
+%\section{Here is a sample appendix}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Optional Glossary, Notation or Acronym section goes here:
+%
+%%%%%%%%%%%%%%
+% Glossary is only allowed in Reviews of Geophysics
+%  \begin{glossary}
+%  \term{Term}
+%   Term Definition here
+%  \term{Term}
+%   Term Definition here
+%  \term{Term}
+%   Term Definition here
+%  \end{glossary}
+
+%
+%%%%%%%%%%%%%%
+% Acronyms
+%   \begin{acronyms}
+%   \acro{Acronym}
+%   Definition here
+%   \acro{EMOS}
+%   Ensemble model output statistics
+%   \acro{ECMWF}
+%   Centre for Medium-Range Weather Forecasts
+%   \end{acronyms}
+
+%
+%%%%%%%%%%%%%%
+% Notation
+%   \begin{notation}
+%   \notation{$a+b$} Notation Definition here
+%   \notation{$e=mc^2$}
+%   Equation in German-born physicist Albert Einstein's theory of special
+%  relativity that showed that the increased relativistic mass ($m$) of a
+%  body comes from the energy of motion of the body—that is, its kinetic
+%  energy ($E$)—divided by the speed of light squared ($c^2$).
+%   \end{notation}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  ACKNOWLEDGMENTS
+%
+% The acknowledgments must list:
+%
+% >>>>	A statement that indicates to the reader where the data
+% 	supporting the conclusions can be obtained (for example, in the
+% 	references, tables, supporting information, and other databases).
+%
+% 	All funding sources related to this work from all authors
+%
+% 	Any real or perceived financial conflicts of interests for any
+%	author
+%
+% 	Other affiliations for any author that may be perceived as
+% 	having a conflict of interest with respect to the results of this
+% 	paper.
+%
+%
+% It is also the appropriate place to thank colleagues and other contributors.
+% AGU does not normally allow dedications.
+
+
+\acknowledgments
+The authors are grateful to Total, S.A. for funding Daniel Wong's PhD research. We also thank Energi Simulation for funding Sebastian Geiger's Chair in Carbonate Reservoir Simulation. 
+
+
+%% ------------------------------------------------------------------------ %%
+%% References and Citations
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BibTeX is preferred:
+%
+% \bibliography{<name of your .bib file>}
+%
+% don't specify bibliographystyle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliography{/Users/danie/Documents/phd-daniel/Bibtex/library}
+
+% Please use ONLY \citet and \citep for reference citations.
+% DO NOT use other cite commands (e.g., \cite, \citeyear, \nocite, \citealp, etc.).
+%% Example \citet and \citep:
+%  ...as shown by \citet{Boug10}, \citet{Buiz07}, \citet{Fra10},
+%  \citet{Ghel00}, and \citet{Leit74}.
+
+%  ...as shown by \citep{Boug10}, \citep{Buiz07}, \citep{Fra10},
+%  \citep{Ghel00, Leit74}.
+
+%  ...has been shown \citep [e.g.,][]{Boug10,Buiz07,Fra10}.
+
+
+\end{document}
+
+
+
+More Information and Advice:
+
+%% ------------------------------------------------------------------------ %%
+%
+%  SECTION HEADS
+%
+%% ------------------------------------------------------------------------ %%
+
+% Capitalize the first letter of each word (except for
+% prepositions, conjunctions, and articles that are
+% three or fewer letters).
+
+% AGU follows standard outline style; therefore, there cannot be a section 1 without
+% a section 2, or a section 2.3.1 without a section 2.3.2.
+% Please make sure your section numbers are balanced.
+% ---------------
+% Level 1 head
+%
+% Use the \section{} command to identify level 1 heads;
+% type the appropriate head wording between the curly
+% brackets, as shown below.
+%
+%An example:
+%\section{Level 1 Head: Introduction}
+%
+% ---------------
+% Level 2 head
+%
+% Use the \subsection{} command to identify level 2 heads.
+%An example:
+%\subsection{Level 2 Head}
+%
+% ---------------
+% Level 3 head
+%
+% Use the \subsubsection{} command to identify level 3 heads
+%An example:
+%\subsubsection{Level 3 Head}
+%
+%---------------
+% Level 4 head
+%
+% Use the \subsubsubsection{} command to identify level 3 heads
+% An example:
+%\subsubsubsection{Level 4 Head} An example.
+%
+%% ------------------------------------------------------------------------ %%
+%
+%  IN-TEXT LISTS
+%
+%% ------------------------------------------------------------------------ %%
+%
+% Do not use bulleted lists; enumerated lists are okay.
+% \begin{enumerate}
+% \item
+% \item
+% \item
+% \end{enumerate}
+%
+%% ------------------------------------------------------------------------ %%
+%
+%  EQUATIONS
+%
+%% ------------------------------------------------------------------------ %%
+
+% Single-line equations are centered.
+% Equation arrays will appear left-aligned.
+
+Math coded inside display math mode \[ ...\]
+ will not be numbered, e.g.,:
+ \[ x^2=y^2 + z^2\]
+
+ Math coded inside \begin{equation} and \end{equation} will
+ be automatically numbered, e.g.,:
+ \begin{equation}
+ x^2=y^2 + z^2
+ \end{equation}
+
+
+% To create multiline equations, use the
+% \begin{eqnarray} and \end{eqnarray} environment
+% as demonstrated below.
+\begin{eqnarray}
+  x_{1} & = & (x - x_{0}) \cos \Theta \nonumber \\
+        && + (y - y_{0}) \sin \Theta  \nonumber \\
+  y_{1} & = & -(x - x_{0}) \sin \Theta \nonumber \\
+        && + (y - y_{0}) \cos \Theta.
+\end{eqnarray}
+
+%If you don't want an equation number, use the star form:
+%\begin{eqnarray*}...\end{eqnarray*}
+
+% Break each line at a sign of operation
+% (+, -, etc.) if possible, with the sign of operation
+% on the new line.
+
+% Indent second and subsequent lines to align with
+% the first character following the equal sign on the
+% first line.
+
+% Use an \hspace{} command to insert horizontal space
+% into your equation if necessary. Place an appropriate
+% unit of measure between the curly braces, e.g.
+% \hspace{1in}; you may have to experiment to achieve
+% the correct amount of space.
+
+
+%% ------------------------------------------------------------------------ %%
+%
+%  EQUATION NUMBERING: COUNTER
+%
+%% ------------------------------------------------------------------------ %%
+
+% You may change equation numbering by resetting
+% the equation counter or by explicitly numbering
+% an equation.
+
+% To explicitly number an equation, type \eqnum{}
+% (with the desired number between the brackets)
+% after the \begin{equation} or \begin{eqnarray}
+% command.  The \eqnum{} command will affect only
+% the equation it appears with; LaTeX will number
+% any equations appearing later in the manuscript
+% according to the equation counter.
+%
+
+% If you have a multiline equation that needs only
+% one equation number, use a \nonumber command in
+% front of the double backslashes (\\) as shown in
+% the multiline equation above.
+
+% If you are using line numbers, remember to surround
+% equations with \begin{linenomath*}...\end{linenomath*}
+
+%  To add line numbers to lines in equations:
+%  \begin{linenomath*}
+%  \begin{equation}
+%  \end{equation}
+%  \end{linenomath*}
+
+
+
