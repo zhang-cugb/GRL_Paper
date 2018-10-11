@@ -31,6 +31,36 @@ Berkowitz, B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Berre%
+, Doster%
+\BCBL {}\ \BBA {} Keilegavlen%
+}{%
+Berre%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+Berre2018}
+\APACinsertmetastar {%
+Berre2018}%
+\begin{APACrefauthors}%
+Berre, I.%
+, Doster, F.%
+\BCBL {}\ \BBA {} Keilegavlen, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{may}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Flow in fractured porous media: A review of conceptual
+  models and discretization approaches}} {{Flow in fractured porous media: A
+  review of conceptual models and discretization approaches}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{}{}{1--20}.
+\newblock
+\begin{APACrefURL} \url{http://arxiv.org/abs/1805.05701} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Bisdom%
 \ \protect \BOthers {.}}{%
 Bisdom%
