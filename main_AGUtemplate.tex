@@ -222,7 +222,7 @@ The 2D DFNs are created from a publicly available dataset containing trace maps 
 
 
 \subsection{Simulation Setup}
-The simulations in this paper are performed using the Embedded Discrete Fracture Model (EDFM), which is available through the MATLAB Reservoir Simulation Toolbox (MRST) \citep{Lee2001, Lie2015, Moinfar2013}. EDFM uses non-neighbouring connections to facilitate fracture-matrix and fracture-fracture flow. This decouples the matrix grid from the fracture network geometry and eases grid construction. 
+The simulations in this paper are performed using the Embedded Discrete Fracture Model (EDFM), which is available through the MATLAB Reservoir Simulation Toolbox (MRST) \citep{Lee2001, Lie2015, Moinfar2013, Shah2016}. EDFM uses non-neighbouring connections to facilitate fracture-matrix and fracture-fracture flow. This decouples the matrix grid from the fracture network geometry and eases grid construction. 
 
 \subsubsection{Fracture Subset Upscaling}
 To create a hybrid model, we first need to upscale all fractures smaller than a selected partitioning size, $s_p$ - we call this Fracture Subset Upscaling (FSU). FSU using EDFM is done by solving the Laplace equation for a square domain containing only fractures with sizes in $[s_{min},s_p]$, subject to a pressure differential on two opposing boundaries, and no-flow condition on the remaining boundaries. This yields a flow field that can be used to calculate an effective permeability, $K_{e}$, using Darcy's law. The calculated $K_{e}$ is a function of $s_p$. For the 3D DFNs, FSU was also performed using EMT. The results are summarized in FSU curves (Figure \ref{fig:FSU} and S1) that plot $K_{e}/K_m$ against $s_p$, where $K_m$ is rock matrix permeability.

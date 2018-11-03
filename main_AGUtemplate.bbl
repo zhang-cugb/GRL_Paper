@@ -913,6 +913,43 @@ Saevik, P\BPBI N.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Shah%
+, M{\o}yner%
+, Tene%
+, Lie%
+\BCBL {}\ \BBA {} Hajibeygi%
+}{%
+Shah%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+Shah2016}
+\APACinsertmetastar {%
+Shah2016}%
+\begin{APACrefauthors}%
+Shah, S.%
+, M{\o}yner, O.%
+, Tene, M.%
+, Lie, K\BHBI a.%
+\BCBL {}\ \BBA {} Hajibeygi, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The multiscale restriction smoothed basis method for
+  fractured porous media ( F-MsRSB )}} {{The multiscale restriction smoothed
+  basis method for fractured porous media ( F-MsRSB )}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Computational Physics}{318}{July}{1--22}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1016/j.jcp.2016.05.001}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jcp.2016.05.001} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Warren%
 \ \BBA {} Root%
 }{%
