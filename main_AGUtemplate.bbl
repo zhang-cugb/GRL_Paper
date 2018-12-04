@@ -1,6 +1,35 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Azizmohammadi%
+\ \BBA {} Matth{\"{a}}i%
+}{%
+Azizmohammadi%
+\ \BBA {} Matth{\"{a}}i%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+Azizmohammadi2017}
+\APACinsertmetastar {%
+Azizmohammadi2017}%
+\begin{APACrefauthors}%
+Azizmohammadi, S.%
+\BCBT {}\ \BBA {} Matth{\"{a}}i, S\BPBI K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Is the permeability of naturally fractured rocks scale
+  dependent?}} {{Is the permeability of naturally fractured rocks scale
+  dependent?}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Resources Research}{53}{9}{8041--8063}.
+\newblock
+\begin{APACrefDOI} \doi{10.1002/2016WR019764} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Berkowitz%
 }{%
 Berkowitz%
@@ -327,49 +356,6 @@ Egya, D\BPBI O.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Elfeel%
-, Jamal%
-, Enemanna%
-, Arnold%
-\BCBL {}\ \BBA {} Geiger%
-}{%
-Elfeel%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2013}}%
-}]{%
-Elfeel2013}
-\APACinsertmetastar {%
-Elfeel2013}%
-\begin{APACrefauthors}%
-Elfeel, M.%
-, Jamal, S.%
-, Enemanna, C.%
-, Arnold, D.%
-\BCBL {}\ \BBA {} Geiger, S.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2013}{jun}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Effect of DFN upscaling on history matching and
-  prediction of naturally fractured reservoirs}} {{Effect of DFN upscaling on
-  history matching and prediction of naturally fractured reservoirs}}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {75th European Association of Geoscientists and Engineers
-  Conference and Exhibition 2013 Incorporating SPE EUROPEC 2013: Changing
-  Frontiers} {75th european association of geoscientists and engineers
-  conference and exhibition 2013 incorporating spe europec 2013: Changing
-  frontiers}\ (\BPGS\ 10--13).
-\newblock
-\APACaddressPublisher{}{Society of Petroleum Engineers}.
-\newblock
-\begin{APACrefURL} \url{http://www.onepetro.org/doi/10.2118/164838-MS}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.2118/164838-MS} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Ezulike%
 \ \BBA {} Dehghanpour%
 }{%
@@ -566,9 +552,9 @@ Lemonnier, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Lie%
+K.~Lie%
 }{%
-Lie%
+K.~Lie%
 }{%
 {\protect \APACyear {2015}}%
 }]{%
@@ -586,6 +572,37 @@ Lie, K.%
   Introduction to Reservoir Simulation Using MATLAB}}.
 \newblock
 \APACaddressPublisher{}{SINTEF}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+K\BPBI A.~Lie%
+\ \protect \BOthers {.}}{%
+K\BPBI A.~Lie%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Lie2012}
+\APACinsertmetastar {%
+Lie2012}%
+\begin{APACrefauthors}%
+Lie, K\BPBI A.%
+, Krogstad, S.%
+, Ligaarden, I\BPBI S.%
+, Natvig, J\BPBI R.%
+, Nilsen, H\BPBI M.%
+\BCBL {}\ \BBA {} Skaflestad, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Open-source MATLAB implementation of consistent
+  discretisations on complex grids}} {{Open-source MATLAB implementation of
+  consistent discretisations on complex grids}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computational Geosciences}{16}{2}{297--322}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s10596-011-9244-4} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
