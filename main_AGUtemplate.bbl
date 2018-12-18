@@ -68,9 +68,9 @@ Berre%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2018}}%
 }]{%
-Berre2018}
+Berre2018a}
 \APACinsertmetastar {%
-Berre2018}%
+Berre2018a}%
 \begin{APACrefauthors}%
 Berre, I.%
 , Doster, F.%
@@ -78,51 +78,48 @@ Berre, I.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2018}{may}{}.
+\APACrefYearMonthDay{2018}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{Flow in fractured porous media: A review of conceptual
   models and discretization approaches}} {{Flow in fractured porous media: A
   review of conceptual models and discretization approaches}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{}{}{}{1--20}.
+\APACjournalVolNumPages{Transport in Porous Media}{}{}{}.
 \newblock
 \begin{APACrefURL} \url{http://arxiv.org/abs/1805.05701} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s11242-018-1171-6} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
 Bisdom%
-\ \protect \BOthers {.}}{%
+, Bertotti%
+\BCBL {}\ \BBA {} Nick%
+}{%
 Bisdom%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {2017}}%
+{\protect \APACyear {2015}}%
 }]{%
-Bisdom2017}
+Bisdom2015}
 \APACinsertmetastar {%
-Bisdom2017}%
+Bisdom2015}%
 \begin{APACrefauthors}%
 Bisdom, K.%
 , Bertotti, G.%
-, Bezerra, H.%
-, {Van Eijk}, M.%
-, {Van Der Voet}, E.%
-\BCBL {}\ \BBA {} Reijmer, J.%
+\BCBL {}\ \BBA {} Nick, H.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2017}{}{}.
+\APACrefYearMonthDay{2015}{}{}.
 \newblock
-\APACrefbtitle {{Deterministic fracture network models from the Potiguar basin,
-  Brazil}.} {{Deterministic fracture network models from the Potiguar basin,
-  Brazil}.}
+{\BBOQ}\APACrefatitle {{The impact of different aperture distribution models
+  and critical stress criteria on equivalent permeability in fractured rocks}}
+  {{The impact of different aperture distribution models and critical stress
+  criteria on equivalent permeability in fractured rocks}}.{\BBCQ}
 \newblock
-\APACaddressPublisher{}{TU Delft}.
+\APACjournalVolNumPages{Journal of Geophysical Research: Solid Earth}{}{}{}.
 \newblock
-\begin{APACrefURL}
-  \url{https://data.4tu.nl/repository/uuid:988152da-3ac3-44cb-9d87-c7365e3707b6}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.4121/uuid:988152da-3ac3-44cb-9d87-c7365e3707b6}
-  \end{APACrefDOI}
+\begin{APACrefDOI} \doi{10.1002/2015JB012657} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -217,42 +214,6 @@ Bourdet, D.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.2118/12777-PA} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-{Cinco L.}%
-, {Samaniego V.}%
-\BCBL {}\ \BBA {} {Dominguez A.}%
-}{%
-{Cinco L.}%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {1976}}%
-}]{%
-Cinco-Ley1976}
-\APACinsertmetastar {%
-Cinco-Ley1976}%
-\begin{APACrefauthors}%
-{Cinco L.}, H.%
-, {Samaniego V.}, F.%
-\BCBL {}\ \BBA {} {Dominguez A.}, N.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1976}{apr}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Unsteady-State Flow Behavior for a Well Near a Natural
-  Fracture}} {{Unsteady-State Flow Behavior for a Well Near a Natural
-  Fracture}}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {SPE Annual Fall Technical Conference and Exhibition.}
-  {Spe annual fall technical conference and exhibition.}
-\newblock
-\APACaddressPublisher{}{Society of Petroleum Engineers}.
-\newblock
-\begin{APACrefURL} \url{http://www.onepetro.org/doi/10.2118/6019-MS}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.2118/6019-MS} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -353,41 +314,6 @@ Egya, D\BPBI O.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1144/petgeo2017-053} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Ezulike%
-\ \BBA {} Dehghanpour%
-}{%
-Ezulike%
-\ \BBA {} Dehghanpour%
-}{%
-{\protect \APACyear {2013}}%
-}]{%
-Ezulike2013}
-\APACinsertmetastar {%
-Ezulike2013}%
-\begin{APACrefauthors}%
-Ezulike, D\BPBI O.%
-\BCBT {}\ \BBA {} Dehghanpour, H.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2013}{nov}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Characterizing Tight Oil Reservoirs Using Dual- and
-  Triple-Porosity Models}} {{Characterizing Tight Oil Reservoirs Using Dual-
-  and Triple-Porosity Models}}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {SPE Unconventional Resources Conference Canada.} {Spe
-  unconventional resources conference canada.}
-\newblock
-\APACaddressPublisher{}{Society of Petroleum Engineers}.
-\newblock
-\begin{APACrefURL} \url{http://www.onepetro.org/doi/10.2118/167126-MS}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.2118/167126-MS} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -552,32 +478,44 @@ Lemonnier, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-K.~Lie%
+Li%
+\ \BBA {} Lee%
 }{%
-K.~Lie%
+Li%
+\ \BBA {} Lee%
 }{%
-{\protect \APACyear {2015}}%
+{\protect \APACyear {2008}}%
 }]{%
-Lie2015}
+Li2008}
 \APACinsertmetastar {%
-Lie2015}%
+Li2008}%
 \begin{APACrefauthors}%
-Lie, K.%
+Li, L.%
+\BCBT {}\ \BBA {} Lee, S\BPBI H.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{2015}.
+\APACrefYearMonthDay{2008}{}{}.
 \newblock
-\APACrefbtitle {{An Introduction to Reservoir Simulation Using MATLAB}} {{An
-  Introduction to Reservoir Simulation Using MATLAB}}.
+{\BBOQ}\APACrefatitle {{Efficient Field-Scale Simulation of Black Oil in a
+  Naturally Fractured Reservoir Through Discrete Fracture Networks and
+  Homogenized Media}} {{Efficient Field-Scale Simulation of Black Oil in a
+  Naturally Fractured Reservoir Through Discrete Fracture Networks and
+  Homogenized Media}}.{\BBCQ}
 \newblock
-\APACaddressPublisher{}{SINTEF}.
+\APACjournalVolNumPages{SPE Reservoir Evaluation {\&}
+  Engineering}{11}{04}{750--758}.
+\newblock
+\begin{APACrefURL} \url{http://www.onepetro.org/doi/10.2118/103901-PA}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.2118/103901-PA} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-K\BPBI A.~Lie%
+Lie%
 \ \protect \BOthers {.}}{%
-K\BPBI A.~Lie%
+Lie%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2012}}%
 }]{%
@@ -704,11 +642,11 @@ Moinfar%
 }{%
 Moinfar%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {2012}}%
+{\protect \APACyear {2014}}%
 }]{%
-Moinfar2013}
+Moinfar2014}
 \APACinsertmetastar {%
-Moinfar2013}%
+Moinfar2014}%
 \begin{APACrefauthors}%
 Moinfar, A.%
 , Varavei, A.%
@@ -717,23 +655,16 @@ Moinfar, A.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2012}{apr}{}.
+\APACrefYearMonthDay{2014}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Development of a Novel and Computationally-Efficient
-  Discrete-Fracture Model to Study IOR Processes in Naturally Fractured
-  Reservoirs}} {{Development of a Novel and Computationally-Efficient
-  Discrete-Fracture Model to Study IOR Processes in Naturally Fractured
-  Reservoirs}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Development of an Efficient Embedded Discrete Fracture
+  Model for 3D Compositional Reservoir Simulation in Fractured Reservoirs}}
+  {{Development of an Efficient Embedded Discrete Fracture Model for 3D
+  Compositional Reservoir Simulation in Fractured Reservoirs}}.{\BBCQ}
 \newblock
-\BIn{} \APACrefbtitle {SPE Improved Oil Recovery Symposium} {Spe improved oil
-  recovery symposium}\ (\BPGS\ 1--17).
+\APACjournalVolNumPages{Spe}{}{April}{289--303}.
 \newblock
-\APACaddressPublisher{}{Society of Petroleum Engineers}.
-\newblock
-\begin{APACrefURL} \url{http://www.onepetro.org/doi/10.2118/154246-MS}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.2118/154246-MS} \end{APACrefDOI}
+\begin{APACrefDOI} \doi{10.2118/163666-MS} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
