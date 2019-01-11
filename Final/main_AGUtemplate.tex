@@ -214,7 +214,7 @@ In this paper, we compare the performances of hybrid models created using variou
 In this section, we elaborate on the methods used to generate simulation models for the purpose of performance comparisons. The first step involves the generation of Discrete Fracture Networks (DFN). These DFNs are then used to create full and hybrid simulation models. The resulting models are subjected to pressure drawdowns to simulate production responses, which can then be compared against each other. The comparison of the production responses allow us to evaluate how well a hybrid model represents a fully resolved model.
 
 \subsection{Data}
-The Discrete Fracture Networks (DFN) used in this study are either (1) generated in 3D using the procedures laid out in \citet{Priest1993}, or (2) based on realistic 2D fracture networks (Figure \ref{fig:DD}) \citep{Bisdom2015}.
+The Discrete Fracture Networks (DFN) used in this study are either (1) generated in 3D using the procedures laid out in \citet{Priest1993}, or (2) based on realistic 2D fracture networks (Figure \ref{fig:DD}) \citep{Bisdom2015, Bisdom2017}.
 
 For each 3D DFN, three orthogonal sets of fractures are generated stochastically. The base parameters used are the fracture density ($P_{32}=0.15$m\textsuperscript{2}/m\textsuperscript{3} per fracture set), the power law exponent of fracture sizes ($n_s=1.5$), and the fracture size range ($s_{min}=5$m and $s_{max}=20$m in radii) \citep{Bonnet2001, Dershowitz1992}. Fractures are circular in shape. Fracture apertures vary with size, following an aperture-size ratio of $1.75\times 10^{-5}$. Aperture is used to calculate fracture intrinsic permeabilities using the cubic law \citep{Witherspoon1980}. Rock permeability used is $K_m=10$mD. Four different cases are considered here: (A) Base case using the presented parameters, (B) $2\times P_{32}$, (C) $2\times n_s$ and (D) $2\times s_{max}$. Examples of these DFNs are shown in Figure \ref{fig:DD}. Additionally, nine other cases were also studied; the parameters used are documented in Text S1 and Table S1.
 
@@ -245,7 +245,7 @@ Additionally, we use the 3D cases to illustrate how the shape of FSU curves depe
 \begin{figure}[h]
  \centering
 
- \includegraphics[width=\textwidth]{FSU/FSU_main.jpg}
+ \includegraphics[width=\textwidth]{FSU_main.jpg}
 
  \caption{Fracture Subset Upscaling. Cases A to D correspond to generated 3D DFNs. 10 stochastic realizations are shown for each case to illustrate variations due to the power law size distribution used. Apodi 2 and 4 are based on outcrop fracture data. Partitioning sizes that are above the labelled threshold produce hybrid models that are inaccurate according to Figure \ref{fig:DD}.}
  \label{fig:FSU}
@@ -265,7 +265,7 @@ In all drawdown studies, the differences between hybrid and full model results a
 \begin{figure}[h]
 	\centering
 	
-	\includegraphics[width=\textwidth]{DD_main/DD_main.jpg}
+	\includegraphics[width=\textwidth]{DD_main.jpg}
 	
 	\caption{Drawdown curves for fully resolved models, and hybrid models corresponding to different partitioning sizes. Cases A to D: One full DFN realization is used per case. Fixed pressure is applied on blue faces. Domain size is 100m x 100m x 100m in all cases. Apodi 2 and 4: Fixed flowrate is applied at locations marked with blue circle. Domain size is 220m x 220m x 1m and 100m x 100m x 1m for Apodi 2 and 4 respectively.}
 	\label{fig:DD}
@@ -475,7 +475,7 @@ Finally, we also note that Fracture Subset Upscaling can be performed \textit{a 
 
 
 \acknowledgments
-The authors are grateful to Total, S.A. for funding Daniel Wong's PhD research. We also thank Energi Simulation for funding Sebastian Geiger's Chair in Carbonate Reservoir Simulation. 
+The authors are grateful to Total, S.A. for funding Daniel Wong's PhD research. We also thank Energi Simulation for funding Sebastian Geiger's Chair in Carbonate Reservoir Simulation. Finally, we thank TU Delft for making their datasets available through \citet{Bisdom2017}.
 
 
 %% ------------------------------------------------------------------------ %%
