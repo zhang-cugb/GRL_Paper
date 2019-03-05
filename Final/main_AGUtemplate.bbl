@@ -704,6 +704,33 @@ Moinfar, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Nelson%
+}{%
+Nelson%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+Nelson2001}
+\APACinsertmetastar {%
+Nelson2001}%
+\begin{APACrefauthors}%
+Nelson, R\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2001}.
+\newblock
+\APACrefbtitle {{Geologic analysis of naturally fractured reservoirs}}
+  {{Geologic analysis of naturally fractured reservoirs}}.
+\newblock
+\APACaddressPublisher{}{Gulf Professional Pub}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencedirect.com.ezproxy1.hw.ac.uk/science/book/9780884153177}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Oda%
 }{%
 Oda%
