@@ -1,35 +1,6 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Azizmohammadi%
-\ \BBA {} Matth{\"{a}}i%
-}{%
-Azizmohammadi%
-\ \BBA {} Matth{\"{a}}i%
-}{%
-{\protect \APACyear {2017}}%
-}]{%
-Azizmohammadi2017}
-\APACinsertmetastar {%
-Azizmohammadi2017}%
-\begin{APACrefauthors}%
-Azizmohammadi, S.%
-\BCBT {}\ \BBA {} Matth{\"{a}}i, S\BPBI K.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Is the permeability of naturally fractured rocks scale
-  dependent?}} {{Is the permeability of naturally fractured rocks scale
-  dependent?}}{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Water Resources Research}{53}{9}{8041--8063}.
-\newblock
-\begin{APACrefDOI} \doi{10.1002/2016WR019764} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Berkowitz%
 }{%
 Berkowitz%
@@ -193,30 +164,34 @@ Bonnet, E.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Bourbiaux%
+Botros%
+, Hassan%
+, Reeves%
+\BCBL {}\ \BBA {} Pohll%
 }{%
-Bourbiaux%
-}{%
-{\protect \APACyear {2010}}%
+Botros%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
 }]{%
-Bourbiaux2010}
+Botros2008}
 \APACinsertmetastar {%
-Bourbiaux2010}%
+Botros2008}%
 \begin{APACrefauthors}%
-Bourbiaux, B.%
+Botros, F\BPBI E.%
+, Hassan, A\BPBI E.%
+, Reeves, D\BPBI M.%
+\BCBL {}\ \BBA {} Pohll, G.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2010}{}{}.
+\APACrefYearMonthDay{2008}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Fractured Reservoir Simulation: a Challenging and
-  Rewarding Issue}} {{Fractured Reservoir Simulation: a Challenging and
-  Rewarding Issue}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{On mapping fracture networks onto continuum}} {{On
+  mapping fracture networks onto continuum}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Oil {\&} Gas Science and Technology – Revue de
-  l'Institut Fran{\c{c}}ais du P{\'{e}}trole}{65}{2}{227--238}.
+\APACjournalVolNumPages{Water Resources Research}{44}{8}{1--17}.
 \newblock
-\begin{APACrefDOI} \doi{10.2516/ogst/2009063} \end{APACrefDOI}
+\begin{APACrefDOI} \doi{10.1029/2007WR006092} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -415,6 +390,98 @@ Hardebol, N\BPBI J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Jackson%
+, Hoch%
+\BCBL {}\ \BBA {} Todman%
+}{%
+Jackson%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2000}}%
+}]{%
+Jackson2000}
+\APACinsertmetastar {%
+Jackson2000}%
+\begin{APACrefauthors}%
+Jackson, C\BPBI P.%
+, Hoch, A\BPBI R.%
+\BCBL {}\ \BBA {} Todman, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Self-consistency of a heterogeneous continuum porous
+  medium representation of a fractured medium}} {{Self-consistency of a
+  heterogeneous continuum porous medium representation of a fractured
+  medium}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{36}{1}{189--202}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jiang%
+\ \BBA {} Younis%
+}{%
+Jiang%
+\ \BBA {} Younis%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+Jiang2015}
+\APACinsertmetastar {%
+Jiang2015}%
+\begin{APACrefauthors}%
+Jiang, J.%
+\BCBT {}\ \BBA {} Younis, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Hybrid Coupled Discrete-Fracture/Matrix and
+  Multicontinuum Models for Unconventional-Reservoir Simulation}} {{Hybrid
+  Coupled Discrete-Fracture/Matrix and Multicontinuum Models for
+  Unconventional-Reservoir Simulation}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{SPE Journal}{}{}{1--19}.
+\newblock
+\begin{APACrefURL} \url{http://www.onepetro.org/doi/10.2118/178430-PA}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.2118/178430-PA} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Karimi-Fard%
+, Gong%
+\BCBL {}\ \BBA {} Durlofsky%
+}{%
+Karimi-Fard%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Karimi-Fard2006}
+\APACinsertmetastar {%
+Karimi-Fard2006}%
+\begin{APACrefauthors}%
+Karimi-Fard, M.%
+, Gong, B.%
+\BCBL {}\ \BBA {} Durlofsky, L\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Generation of coarse-scale continuum flow models from
+  detailed fracture characterizations}} {{Generation of coarse-scale continuum
+  flow models from detailed fracture characterizations}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Resources Research}{42}{10}{1--13}.
+\newblock
+\begin{APACrefDOI} \doi{10.1029/2006WR005015} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Lee%
 , Lough%
 \BCBL {}\ \BBA {} Jensen%
@@ -455,40 +522,7 @@ Lemonnier%
 \ \BBA {} Bourbiaux%
 }{%
 {\protect \APACyear {2010}}%
-{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
-Lemonnier2010a}
-\APACinsertmetastar {%
-Lemonnier2010a}%
-\begin{APACrefauthors}%
-Lemonnier, P.%
-\BCBT {}\ \BBA {} Bourbiaux, B.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2010{\protect \BCnt {1}}}{apr}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Simulation of Naturally Fractured Reservoirs. State of
-  the Art}} {{Simulation of Naturally Fractured Reservoirs. State of the
-  Art}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Oil {\&} Gas Science and Technology – Revue de
-  l'Institut Fran{\c{c}}ais du P{\'{e}}trole}{65}{2}{239--262}.
-\newblock
-\begin{APACrefURL} \url{http://dx.doi.org/10.2516/ogst/2009066}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.2516/ogst/2009066} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Lemonnier%
-\ \BBA {} Bourbiaux%
-}{%
-Lemonnier%
-\ \BBA {} Bourbiaux%
-}{%
-{\protect \APACyear {2010}}%
-{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+}]{%
 Lemonnier2010}
 \APACinsertmetastar {%
 Lemonnier2010}%
@@ -498,7 +532,7 @@ Lemonnier, P.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2010{\protect \BCnt {2}}}{apr}{}.
+\APACrefYearMonthDay{2010}{apr}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{Simulation of Naturally Fractured Reservoirs. State of
   the Art}} {{Simulation of Naturally Fractured Reservoirs. State of the
@@ -704,33 +738,6 @@ Moinfar, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Nelson%
-}{%
-Nelson%
-}{%
-{\protect \APACyear {2001}}%
-}]{%
-Nelson2001}
-\APACinsertmetastar {%
-Nelson2001}%
-\begin{APACrefauthors}%
-Nelson, R\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{2001}.
-\newblock
-\APACrefbtitle {{Geologic analysis of naturally fractured reservoirs}}
-  {{Geologic analysis of naturally fractured reservoirs}}.
-\newblock
-\APACaddressPublisher{}{Gulf Professional Pub}.
-\newblock
-\begin{APACrefURL}
-  \url{http://www.sciencedirect.com.ezproxy1.hw.ac.uk/science/book/9780884153177}
-  \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Oda%
 }{%
 Oda%
@@ -789,35 +796,68 @@ Priest, S\BPBI D.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Renard%
-\ \BBA {} de Marsily%
+Rogers%
+, Enachescu%
+, Trice%
+\BCBL {}\ \BBA {} Buer%
 }{%
-Renard%
-\ \BBA {} de Marsily%
-}{%
-{\protect \APACyear {1997}}%
+Rogers%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
 }]{%
-Renard1997}
+Rogers2007}
 \APACinsertmetastar {%
-Renard1997}%
+Rogers2007}%
 \begin{APACrefauthors}%
-Renard, P.%
-\BCBT {}\ \BBA {} de Marsily, G.%
+Rogers, S.%
+, Enachescu, C.%
+, Trice, R.%
+\BCBL {}\ \BBA {} Buer, K.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{1997}{oct}{}.
+\APACrefYearMonthDay{2007}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Calculating equivalent permeability: a review}}
-  {{Calculating equivalent permeability: a review}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Integrating discrete fracture network models and
+  pressure transient data for testing conceptual fracture models of the Valhall
+  chalk reservoir, Norwegian North Sea}} {{Integrating discrete fracture
+  network models and pressure transient data for testing conceptual fracture
+  models of the Valhall chalk reservoir, Norwegian North Sea}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Advances in Water Resources}{20}{5-6}{253--278}.
+\APACjournalVolNumPages{Geological Society, London, Special
+  Publications}{270}{1}{193--204}.
 \newblock
-\begin{APACrefURL}
-  \url{http://linkinghub.elsevier.com/retrieve/pii/S0309170896000504}
-  \end{APACrefURL}
+\begin{APACrefDOI} \doi{10.1144/gsl.sp.2007.270.01.13} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Roubinet%
+, Dreuzy%
+\BCBL {}\ \BBA {} Davy%
+}{%
+Roubinet%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Roubinet2010}
+\APACinsertmetastar {%
+Roubinet2010}%
+\begin{APACrefauthors}%
+Roubinet, D.%
+, Dreuzy, J\BPBI R\BPBI D.%
+\BCBL {}\ \BBA {} Davy, P.%
+\end{APACrefauthors}%
+\unskip\
 \newblock
-\begin{APACrefDOI} \doi{10.1016/S0309-1708(96)00050-4} \end{APACrefDOI}
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Connectivity ‐ consistent mapping method for 2 ‐ D
+  discrete fracture networks}} {{Connectivity ‐ consistent mapping method for
+  2 ‐ D discrete fracture networks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{46}{}{}.
+\newblock
+\begin{APACrefDOI} \doi{10.1029/2009WR008302} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -961,6 +1001,32 @@ Shah, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Svensson%
+}{%
+Svensson%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+Svensson2001}
+\APACinsertmetastar {%
+Svensson2001}%
+\begin{APACrefauthors}%
+Svensson, U.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A continuum representation of fracture networks. Part
+  I: Method and basic test cases}} {{A continuum representation of fracture
+  networks. Part I: Method and basic test cases}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Hydrology}{250}{1-4}{170--186}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/S0022-1694(01)00435-8} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Warren%
 \ \BBA {} Root%
 }{%
@@ -1025,43 +1091,6 @@ Witherspoon, P\BPBI A.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1029/WR016i006p01016} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Yan%
-\ \protect \BOthers {.}}{%
-Yan%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2016}}%
-}]{%
-Yan2016}
-\APACinsertmetastar {%
-Yan2016}%
-\begin{APACrefauthors}%
-Yan, B.%
-, Alfi, M.%
-, An, C.%
-, Cao, Y.%
-, Wang, Y.%
-\BCBL {}\ \BBA {} Killough, J\BPBI E.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2016}{jul}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{General Multi-Porosity simulation for fractured
-  reservoir modeling}} {{General Multi-Porosity simulation for fractured
-  reservoir modeling}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Natural Gas Science and
-  Engineering}{33}{}{777--791}.
-\newblock
-\begin{APACrefURL}
-  \url{http://linkinghub.elsevier.com/retrieve/pii/S1875510016303997
-  https://linkinghub.elsevier.com/retrieve/pii/S1875510016303997}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1016/j.jngse.2016.06.016} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
