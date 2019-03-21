@@ -1,6 +1,32 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Barth{\'{e}}l{\'{e}}my%
+}{%
+Barth{\'{e}}l{\'{e}}my%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Barthelemy2009}
+\APACinsertmetastar {%
+Barthelemy2009}%
+\begin{APACrefauthors}%
+Barth{\'{e}}l{\'{e}}my, J\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Effective permeability of media with a dense network of
+  long and micro fractures}} {{Effective permeability of media with a dense
+  network of long and micro fractures}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Transport in Porous Media}{76}{1}{153--178}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s11242-008-9241-9} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Berkowitz%
 }{%
 Berkowitz%
